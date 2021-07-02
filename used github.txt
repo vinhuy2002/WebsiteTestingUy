@@ -1,8 +1,0 @@
-
-- Đưa lên github:
-git add .
-git commit -m " "
-git push
-
-- Lấy từ github về:
-git pull
