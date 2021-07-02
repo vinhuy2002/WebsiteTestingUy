@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Covid 19 - Kiến Thức Y Tế</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../mycss/vinhuy.css">
+    <link rel="stylesheet" href="../mycss/mycssKTYT.css">
+    <script src="../myscript/scriptKTMT.js"></script>
+    <script src="../Bootstrap/jquery.min.js"></script>
+    <script src="../Bootstrap/popper.min.js"></script>
+    <script src="../Bootstrap/bootstrap.min.js"></script>
+    <script src="../Bootstrap/all.js" data-auto-replace-svg="nest"></script>
+
+</head>
+<body>
+    <div class='thetop'></div>
+    <div class="container topp">
+        <div class="row">
+            <div class="col-lg-5">
+                <a href="index.html">
+                    <img src="../images/logoKTYT.png" style="width:240px;"> 
+                </a>
+            </div>
+            <div class="col-lg-7">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-dark navbar-expand-lg text-white">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link text-white">Trang chủ</a></li>
+
+                    <!-- Dropdown  -->
+                    <li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop" data-bs-toggle="dropdown">Dấu hiệu bệnh</a>
+                        <div class="dropdown-menu" aria-labelledby="navDrop">
+                            <div class="container ">
+                                <div class="subnav-content">
+                                    <input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+                                    <div class="navDrop1">
+                                        <a href="#company">Co giật</a>
+                                        <a href="#company">Chán ăn</a>
+                                        <a href="#company">Chóng mặt</a>
+                                        <a href="#company">Chảy mồ hôi</a>
+                                        <a href="#company">Chảy máu mũi</a>
+                                        <a href="#company">Chấm đỏ</a>
+                                        <a href="#company">Chảy máu chân răng</a>
+                                        <a href="#company">Dị ứng</a>
+                                        <a href="#company">Đau đầu</a>
+                                        <a href="#company">Đốm nhỏ trên da</a>
+                                        <a href="#company">Đau bụng</a>
+                                        <a href="#company">Đau vai gáy</a>
+                                        <a href="#company">Đau khớp</a>
+                                        <a href="#company">Đau họng</a>
+                                        <a href="#company">Ho Khan</a>
+                                        <a href="#company">Hoa mắt</a>
+                                        <a href="#company">Kén ăn</a>
+                                        <a href="#company">Khó thở</a>
+                                        <a href="#company">Khó tiêu</a>
+                                        <a href="#company">Mắt mờ</a>
+                                        <a href="#company">Mệt mỏi</a>
+                                        <a href="#company">Mẫn cảm</a>
+                                        <a href="#company">Ngứa</a>
+                                        <a href="#company">Ngủ không được</a>
+                                        <a href="#company">Ngộ độc</a>
+                                        <a href="#company">Nấm chân</a>
+                                        <a href="#company">Ù tai</a>
+                                        <a href="#company">Sùi bọt mép</a>
+                                        <a href="#company">Sứng vù</a>
+                                        <a href="#company">Tức ngực</a>
+                                        <a href="#company">Trẻ khóc</a>
+                                        <a href="#company">Tiểu ra máu</a>
+                                        <a href="#company">...</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Dropdown  -->
+
+                    <li class="nav-item"><a href="../BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+                    <li class="nav-item"><a href="../SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+                    <li class="nav-item"><a href="../NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+                    <li class="nav-item"><a href="../KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+                    <li class="nav-item"><a href="../CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+                    <li class="nav-item"><a href="../TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">Khác</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="mySidepanel" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Fanpage</a>
+        <a href="#">Group</a>
+        <a href="#">Donate</a>
+        <a href="#">Trợ giúp</a>
+    </div>
+
+
+    <div class="scrolltop">
+        <div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+    </div> 
+
+
+    <div id="mySidenav">
+        <a href="../CuaHangSucKhoe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+        <a href="../KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+    </div>
+
+    <div class="container trang top20">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="sticky">
+                    <img src="../images/khoahoc-covid19.jpg">
+                    <a href="" class="binhThuong midd">
+                        <button type="button" class="btn btn-danger btnMoney">Đăng ký khóa học</button>
+                    </a><br>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../images/khoahoc-nen-tang-y-hoc.jpg" alt="Los Angeles">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../images/khoahoc-khoa-hoc-he.jpg" alt="Chicago">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../images/khoahoc-covid19.jpg" alt="New York">
+                      </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+
+        <br>
+    </div>
+    <div class="col-lg-8">
+        <div class="card hov">
+            <div class="card-body">
+              <h2>GIỚI THIỆU KHÓA HỌC</h2>
+              <p><i>“Một trong những phẩm chất cần thiết của bác sĩ lâm sàng là quan tâm đến con người: bí quyết chăm sóc bệnh nhân là chăm sóc bệnh nhân”</i></p>
+              <p><b>Khóa học này sẽ dạy bạn cách chăm sóc hiệu quả cho những bệnh nhân bị bệnh nặng trong đại dịch COVID-19.</b></p>
+              <p>Bạn sẽ học cách thực hành hàng ngày cho các nhân viên lâm sàng tuyến đầu hỗ trợ bệnh nhân chăm sóc quan trọng có và không có COVID-19, cũng như cách áp dụng các nguyên tắc thông khí và hỗ trợ nội tạng để chăm sóc bệnh nhân bị bệnh nặng do coronavirus.</p>
+              <p><b>Sẽ bao gồm những chủ đề nào?</b></p>
+              <p>Bệnh nhân suy nhược<br>Thực hành hàng ngày về chăm sóc quan trọng<br> Thông số kỹ thuật COVID-19<br> Hỗ trợ thông gió và nội tạng<br> Chăm sóc bản thân và Hạnh phúc của Nhân viên</p>
+              <p><b>Khi nào bạn muốn bắt đầu?</b></p>
+              <p>Hầu hết các khóa học FutureLearn chạy nhiều lần. Mỗi lần chạy của một khóa học đều có ngày bắt đầu đã định nhưng bạn có thể tham gia và hoàn thành khóa học sau khi bắt đầu.</p>
+              <p><b>Bạn sẽ đạt được gì?</b></p>
+              <p>Vào cuối khóa học, bạn sẽ có thể:</p>
+              <p>
+                  <li>Áp dụng các nguyên tắc hiện tại và đang phát triển của Thực hành Bảo vệ Cá nhân trong việc chăm sóc bệnh nhân COVID-19.</li>
+                  <li>Áp dụng các nguyên tắc dựa trên bằng chứng về hỗ trợ và theo dõi nội tạng nâng cao cho bệnh nhân bị bệnh nặng COVID-19.</li>
+                  <li>Áp dụng các thực hành hàng ngày dựa trên bằng chứng để chăm sóc bệnh nhân nặng.</li>
+                  <li>Phát triển một loạt các phương pháp chăm sóc bản thân chuyên biệt, bao gồm hiện diện, tự tử tế, lắng nghe từ bi, đặt lòng bàn chân, đi bộ một dặm bằng giày da đanh của chúng.</li>
+                  <li>Phản ánh một cách phê bình các yếu tố phức tạp cần thiết để đạt được cả sự tự nhận thức và lòng từ bi trong một môi trường căng thẳng cao độ.</li>
+              </p>
+              <p><b>Khóa học này dành cho ai?</b></p>
+              <p>Khóa học này được thiết kế cho các nhân viên y tế tuyến đầu, những người đang chăm sóc cho những bệnh nhân bị bệnh nặng trong đại dịch COVID-19.</p>
+              <p>Điều này bao gồm một loạt các chuyên gia chăm sóc sức khỏe trong chăm sóc cấp tính, từ nhiều nền tảng chuyên khoa lâm sàng khác nhau.</p>
+              <p>Bạn có thể có một số kinh nghiệm chăm sóc quan trọng trước đây hoặc không có.</p>
+              <p>Thông tin này sẽ hỗ trợ những kiến thức và kỹ năng chăm sóc quan trọng mới mẻ, các bác sĩ mới có trình độ chuyên môn, những người đang nâng cao kỹ năng và những người quay trở lại các dịch vụ lâm sàng cấp tính trong đại dịch COVID-19.</p>
+
+              <p class="text-success"><i>Cập nhật lần cuối vào tháng 8 năm 2020</i></p>
+          </div>
+
+      </div>
+
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+</div>
+
+
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50 ) {
+            $('.scrolltop:hidden').stop(true, true).fadeIn();
+        } else {
+            $('.scrolltop').stop(true, true).fadeOut();
+        }
+    });
+    $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+</script>
+
+
+<footer class="footer_u">
+    <div class="container_u">
+        <div class="row_u">
+            <div class="footer-col_u">
+                <h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+                <form>
+                    <input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+                    <br>
+                    <button class="btn_u">Đăng Ký</button>
+                </form>
+            </div>
+            <div class="footer-col_u">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Về Website</a></li>
+                </ul>
+            </div>
+            <div class="footer-col_u">
+                <h4>Khám phá</h4>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+                    <li><a href="../SoCuu.html">Sơ cứu</a></li>
+                    <li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+                    <li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+                    <li><a href="../TinTuc.html">Tin tức</a></li>
+                    <li><a href="../CuaHangSucKhoe.html">Cửa hàng sức khỏe</a></li>
+                </ul>
+            </div>
+            <div class="footer-col_u">
+                <h4>Kết nối với chúng tôi</h4>
+                <div class="social-links_u">
+                    <a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row_u">
+        <div class="mini-footer_u">Copyright © 2021: <a href="../index.html">KTYT</a></div>
+    </div>
+</footer>
+
+</body>
+</html>

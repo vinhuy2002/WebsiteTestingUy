@@ -1,0 +1,103 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap'); */
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap');*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Raleway', sans-serif;*/
+}
+.wcolor{
+    background-color: blue !important;
+    background: white !important;
+}
+.colgorund{
+    /* background-color: #f8f9fa !important; */
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.226) 0px 5px 15px;
+}
+
+.colgorund:hover{
+    box-shadow: rgba(0, 0, 0, 0.411) 0px 5px 15px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    z-index: 99;
+    /*height: 100vh;*/
+}
+
+.navbar{
+    box-shadow: inset 0 -1px 0 rgba(31, 130, 148, 0.774);
+    background-color: #002A32 !important;
+}
+
+.sidebar .nav-link {
+    color: #333;
+}
+
+.sidebar .nav-link.active{
+    color: #0d6efd;
+}
+
+.cusHov a:hover{
+    padding-left: 2px;
+    background-color: rgb(40, 106, 134);
+    border-radius: 10px;
+    box-shadow: rgba(47, 56, 26, 0.452) 0px 5px 15px;
+    /* box-shadow: inset 1px 0.5px 0px 0.5px rgba(0, 0, 0, .1); */
+    color:
+}
+
+.footer{
+    box-shadow: inset 0px 1px 0px 0px rgba(31, 130, 148, 0.774);
+    background-color: #002A32;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+.card{
+    height: 100%;
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.226) 0px 5px 15px;
+    transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+}
+.card-header{
+    background: white !important;
+    border-radius: 10px !important;
+    border-bottom:  none !important;
+    transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+}
+
+.hov:hover{
+    border-color: #0652dd;
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+    transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+}
+
+input[type=text]{
+    outline: none;
+    border: 1px solid rgb(179, 179, 179);
+    height: 35px;
+    font-size: 20px;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.cusHov span{
+    color: white;
+}
+
+.sidebar{
+    background-color: #002A32;
+}

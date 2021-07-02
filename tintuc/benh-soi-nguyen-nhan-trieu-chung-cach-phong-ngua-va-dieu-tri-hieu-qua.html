@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bệnh sởi - Kiến Thức Y Tế</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../mycss/vinhuy.css">
+	<link rel="stylesheet" href="../mycss/mycssKTYT.css">
+	<script src="../myscript/scriptKTMT.js"></script>
+	<script src="../Bootstrap/jquery.min.js"></script>
+	<script src="../Bootstrap/popper.min.js"></script>
+	<script src="../Bootstrap/bootstrap.min.js"></script>
+	<script src="../Bootstrap/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+	<div class='thetop'></div>
+	<div class="container topp">
+		<div class="row">
+			<div class="col-lg-5">
+				<a href="index.html">
+					<img src="../images/logoKTYT.png" style="width:240px;">	
+				</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-dark navbar-expand-lg text-white">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="../index.html" class="nav-link text-white">Trang chủ</a></li>
+
+					<!-- Dropdown  -->
+					<li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop" data-bs-toggle="dropdown">Dấu hiệu bệnh</a>
+						<div class="dropdown-menu" aria-labelledby="navDrop">
+							<div class="container ">
+								<div class="subnav-content">
+									<input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+									<div class="navDrop1">
+										<a href="#company">Co giật</a>
+										<a href="#company">Chán ăn</a>
+										<a href="#company">Chóng mặt</a>
+										<a href="#company">Chảy mồ hôi</a>
+										<a href="#company">Chảy máu mũi</a>
+										<a href="#company">Chấm đỏ</a>
+										<a href="#company">Chảy máu chân răng</a>
+										<a href="#company">Dị ứng</a>
+										<a href="#company">Đau đầu</a>
+										<a href="#company">Đốm nhỏ trên da</a>
+										<a href="#company">Đau bụng</a>
+										<a href="#company">Đau vai gáy</a>
+										<a href="#company">Đau khớp</a>
+										<a href="#company">Đau họng</a>
+										<a href="#company">Ho Khan</a>
+										<a href="#company">Hoa mắt</a>
+										<a href="#company">Kén ăn</a>
+										<a href="#company">Khó thở</a>
+										<a href="#company">Khó tiêu</a>
+										<a href="#company">Mắt mờ</a>
+										<a href="#company">Mệt mỏi</a>
+										<a href="#company">Mẫn cảm</a>
+										<a href="#company">Ngứa</a>
+										<a href="#company">Ngủ không được</a>
+										<a href="#company">Ngộ độc</a>
+										<a href="#company">Nấm chân</a>
+										<a href="#company">Ù tai</a>
+										<a href="#company">Sùi bọt mép</a>
+										<a href="#company">Sứng vù</a>
+										<a href="#company">Tức ngực</a>
+										<a href="#company">Trẻ khóc</a>
+										<a href="#company">Tiểu ra máu</a>
+										<a href="#company">...</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown  -->
+
+					<li class="nav-item"><a href="../BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+					<li class="nav-item"><a href="../SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+					<li class="nav-item"><a href="../NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+					<li class="nav-item"><a href="../KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+					<li class="nav-item"><a href="../CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+					<li class="nav-item"><a href="../TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">|||</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+
+	<div id="mySidepanel" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 1px 13px 1px 13px;">×</a>
+		<a href="#">Fanpage</a>
+		<a href="#">Group</a>
+		<a href="#">Donate</a>
+		<a href="#">Trợ giúp</a>
+	</div>
+
+
+	<div class="scrolltop">
+		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+	</div>
+
+
+	<div id="mySidenav">
+		<a href="../CuaHangSucKhoe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+		<a href="../KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+	</div>
+
+	<div class="container trang">
+		<br><h3><b>Bệnh sởi: Nguyên nhân, triệu chứng, cách phòng ngừa và điều trị hiệu quả</b></h3><br>
+		<h4>Bệnh sởi (Morbilli) là gì?</h4>
+		<p>Virus sởi một loại virus ARN thuộc chi Morbillillin nằm trong họ Paramyxoviridae và chỉ có một vật chủ tự nhiên là con người. Sởi là một bệnh lưu hành rộng, vì thế bệnh liên tục xuất hiện trong cộng đồng, cộng thêm mức độ lây lan của bệnh rất nhanh nên rất dễ bùng phát thành dịch.</p><br>
+		<center><img src="../images/benh-soi-nenn-lam-the-nao.jpg" style="width: 500px"><br><br></center>
+
+		<h4>Vì sao bệnh sởi dễ bùng phát thành dịch?</h4>
+		<p>Theo công bố của UNICEF, sởi là một bệnh truyền nhiễm cao, hơn cả Ebola, bệnh lao hay bệnh cúm. Bệnh sởi cũng có thể lây lan nếu như một người nào đó chạm vào một bề mặt hoặc một vật nào đó đã bị nhiễm virus, sau đó chạm vào miệng hoặc mũi của chính họ hoặc ăn uống khi chưa rửa tay.</p>
+		<p>Vi rút sởi có thể tồn tại trong không khí và trên bề mặt tới 2 giờ, chờ đợi để xâm nhập vào đường thở của các nạn nhân tiếp theo. Vì thế, một người khỏe mạnh có thể mắc bệnh sởi nếu ở chung với người nhiễm vi rút sởi hoặc chỉ qua tiếp xúc gián tiếp trong vòng 2 giờ.</p>
+		<p>Là một bệnh lý có tính chất lây nhiễm rất cao thông qua việc nuốt hoặc hít những hạt dịch tiết đường hô hấp từ một người bị nhiễm thông qua hắt hơi hoặc ho, virus sởi lây lan trong không khí và làm nhiễm trùng đường hô hấp, có khả năng gây tử vong đối với trẻ em suy dinh dưỡng hoặc trẻ em quá nhỏ chưa thể tiêm vắc xin.</p><br>
+
+		<h4>Triệu chứng khi mắc bệnh sởi là gì?</h4>
+		<p>Sởi là một bệnh truyền nhiễm chết người thường tấn công trẻ em. Sau một thời gian ủ bệnh từ 10 đến 12 ngày, bệnh sởi xuất hiện các dấu hiệu và triệu chứng như:</p>
+		<li>Sốt</li>
+		<li>Ho khan,</li>
+		<li>Sổ mũi,</li>
+		<li>Ăn không ngon,</li>
+		<li>Chảy máu cam,</li>
+		<li>Đau họng,</li>
+		<li>Viêm kết mạc,</li>
+		<li>Xuất hiện những đốm Koplik trắng nhỏ với tâm màu trắng hơi xanh trên nền đỏ bên trong miệng hay trên niêm mạc bên trong của má.</li>
+		<p>Giai đoạn ủ bệnh và nhiễm trùng kéo dài từ hai đến ba tuần</p>
+		<p>Trong 10 đến 14 ngày đầu tiên sau khi bị nhiễm. Người bệnh không có dấu hiệu hoặc triệu chứng của bệnh sởi trong thời gian này. Vì là những triệu chứng không đặc hiệu và dễ bị nhầm lẫn với các bệnh khác, bệnh sởi thường bắt đầu bằng sốt nhẹ đến trung bình, kèm theo ho dai dẳng, sổ mũi, viêm kết mạc và đau họng. Dấu hiệu này có thể kéo dài hai hoặc ba ngày.</p>
+		<p>Sau đó xuất hiện các nốt phát ban, những đốm nhỏ màu đỏ, hơi sưng. Vài ngày sau những vết mẩn ngứa khó chịu bắt đầu lan ra khắp cơ thể, bắt đầu trên mặt và cổ và di chuyển xuống dưới. Phát ban thường kéo dài trong ba đến năm ngày và sau đó biến mất. Đồng thời, cơn sốt tăng mạnh, thường cao tới 40 đến 41 độ C.</p><br>
+
+		<h4>Biến chứng nguy hiểm của bệnh sởi là gì?</h4>
+		<p>Trong những trường hợp không biến chứng, những người mắc bệnh sởi bắt đầu hồi phục ngay khi phát ban xuất hiện và cảm thấy bình thường trở lại sau khoảng hai đến ba tuần.</p>
+		<p>Nhưng có tới 40% bệnh nhân bị biến chứng do vi rút sởi. Những điều này thường xảy ra ở trẻ nhỏ (trẻ em dưới 5 tuổi), ở người lớn trên 20 tuổi và ở bất kỳ ai khác nếu suy dinh dưỡng hoặc suy giảm miễn dịch. Trẻ em dưới 5 tuổi có xác suất tử vong cao nhất.
+		</p>
+		<p>Ngoài ra, một số biến chứng nguy hiểm mà bệnh sởi có thể gây ra cho bệnh nhân như:</p>
+		<li>Viêm tai giữa cấp xảy ra ở 1/10 số trẻ bị nhiễm sởi.</li>
+		<li>Viêm phổi nặng xảy ra khoảng 1/20 số trường hợp bị mắc sởi, có thể dẫn đến tử vong.</li>
+		<li>Viêm não, xảy ra ở khoảng 1/1.000 số người mắc bệnh sởi.</li>
+		<li>Tiêu chảy và ói mửa do sởi, thường xảy ra cho trẻ nhỏ, nhất là trẻ nhũ nhi.</li>
+		<li>Mờ hoặc loét giác mạc có thể gây mù lòa, một biến chứng rất nguy hiểm của sởi.</li>
+		<li>Suy dinh dưỡng nặng ở trẻ em hậu nhiễm sởi, làm ảnh hưởng rất nhiều đến sức khỏe và sự phát triển của trẻ.</li>
+		<li>Phụ nữ có thai mắc bệnh sởi có thể bị sảy thai, sinh non hay sinh trẻ nhẹ cân.</li><br>
+		
+		<h4>Bệnh sởi có thuốc điều trị đặc hiệu không?</h4>
+		<p>Theo Cục Y tế dự phòng – Bộ Y tế: Sởi là một bệnh truyền nhiễm, gây dịch lưu hành rộng rãi ở mọi nơi trên thế giới, nhất là trong thời kỳ trước tiêm chủng, bệnh phổ biến ở trẻ em. Trên 90% số người trước lứa tuổi 20 đã bị mắc bệnh sởi, rất hiếm người không bị mắc sởi. Ước tính hàng năm khoảng 100 triệu trường hợp mắc và 6 triệu người tử vong do sởi.</p>
+		<p>Hiện chưa có thuốc điều trị đặc hiệu bệnh sởi, nên dự phòng là yếu tố tiên quyết. Nếu chẳng may mắc bệnh, người bệnh cần biết cách sử dụng thuốc đúng, theo chỉ dẫn của bác sĩ chuyên khoa, tránh những biến chứng nguy hiểm do việc dùng thuốc không chính xác gây ra.</p><br>
+
+		<h4>Điều trị bệnh sởi như thế nào?</h4>
+		<p>Do bệnh có khả năng lây nhiễm rất cao nên việc phòng ngừa bệnh, tránh tình trạng lây lan trong cộng đồng là điều phụ huynh cần chú ý. Mọi người cần giữ vệ sinh cá nhân, vệ sinh nhà cửa và môi trường chung quanh, giữ gìn nơi sinh hoạt thông thoáng, sạch sẽ.</p>
+		<p>Với trẻ đã nhiễm bệnh sởi, cần phải được ở phòng thoáng, đủ ánh sáng, nghỉ ngơi, ngủ đủ, vệ sinh răng miệng. Tuyệt đối tránh các tập tục kiêng nước, kiêng gió, kiêng ăn.</p>
+		<p>Trẻ mắc bệnh sẽ chán ăn, khi đó cha mẹ nên để trẻ ăn đồ ăn lỏng, dễ tiêu, kết hợp tăng cường dinh dưỡng bằng các thức ăn giàu vitamin A.</p>
+		<p>Nhỏ mũi, mắt bằng dung dịch nước muối sinh lý (NaCl 0,9%) hoặc dung dịch nhỏ mắt mũi 3-4 lần/ngày.</p>
+		<p>Trẻ cũng cần uống đủ nước, nước oresol hoặc nước hoa quả. Khi trẻ tiêu chảy còn phải bổ sung nước hoặc cho bú nhiều hơn.</p>
+		<p>Khi phát hiện các dấu hiệu bệnh nặng như mệt, li bì, kém ăn, khó thở, tiêu chảy, ho nhiều, ban lặn nhưng vẫn sốt… thì cần đưa trẻ đến các cơ sở y tế để điều trị kịp thời.</p>
+		<p>Khi trẻ có các dấu hiệu bất thường, như sốt lặp lại, ho nhiều hơn và có đờm, hay nheo mắt vì chói, tiêu chảy, sốt cao kéo dài, co giật, li bì, trẻ mệt hơn, thở nhanh nông, khàn tiếng hoặc mất tiếng hoặc có các biểu hiện bất thường khác… cha mẹ cần đưa bé đến các cơ sở y tế gần nhất để được điều trị. Phụ nữ mang thai bị mắc sởi đến bệnh viện gần nhất để được tư vấn và có pháp đồ điều trị trong thời gian thai kỳ.</p><br>
+
+		<h4>Phòng ngừa để ngăn chặn sự “hồi sinh” của dịch sởi</h4>
+		<p>Sởi là bệnh có tốc độ lây lan cực nhanh, một người bệnh có thể truyền nhiễm cho 12 đến 18 người lành không có miễn dịch phòng sởi. Mỹ từng tuyên bố xóa sổ được sởi vào năm 2000, tuy nhiên vì nhiều vấn đề như người dân từ chối tiêm chủng, do người dân đi du lịch tại những nước đang có dịch và mang vi rút về nước. Hiện nay, hơn 1000 trường hợp nhiễm sởi được ghi nhận ở Mỹ cảnh báo nguy cơ bùng phát dịch trên diện rộng.</p>
+		<p>Ở nước ta, đến nay đã có 62/63 tỉnh, thành phố ghi nhận các trường hợp mắc sởi rải rác, chủ yếu ở trẻ em dưới 10 tuổi nhưng cũng ghi nhận nhiều trường hợp mắc sởi ở người lớn. Trong số các trường hợp mắc sởi có đến 98,7% có tiền sử chưa tiêm vắc xin sởi hoặc không rõ tiền sử tiêm vắc xin sởi. Các trường hợp mắc tập trung chủ yếu tại các tỉnh, thành phố vùng sâu, vùng xa nơi có tỷ lệ tiêm chủng vắc xin sởi thấp và những đô thị có dân số di biến động lớn nên có nguy cơ cao bùng phát dịch.</p>
+		<p>Hiện nay, nước ta đang lưu hành 3 loại vắc xin có thể bảo vệ sức khỏe khỏi sự tấn công của bệnh sởi là vắc xin sởi đơn MVVac của Việt Nam và vắc xin 3in1 kết hợp phòng 3 bệnh Sởi – Quai bị – Rubella MMR II của Mỹ và MMR của Ấn Độ.</p>
+
+
+		<br>
+		<br>
+
+	</div>
+
+
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 50 ) {
+				$('.scrolltop:hidden').stop(true, true).fadeIn();
+			} else {
+				$('.scrolltop').stop(true, true).fadeOut();
+			}
+		});
+		$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+	</script>
+
+
+	<footer class="footer_u">
+		<div class="container_u">
+			<div class="row_u">
+				<div class="footer-col_u">
+					<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+					<form>
+						<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+						<br>
+						<button class="btn_u">Đăng Ký</button>
+					</form>
+				</div>
+				<div class="footer-col_u">
+					<h4>Hỗ trợ</h4>
+					<ul>
+						<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Về Website</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Khám phá</h4>
+					<ul>
+						<li><a href="../index.html">Trang chủ</a></li>
+						<li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+						<li><a href="../SoCuu.html">Sơ cứu</a></li>
+						<li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+						<li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+						<li><a href="../TinTuc.html">Tin tức</a></li>
+						<li><a href="../CuaHangSucKhoe.html">Cửa hàng sức khỏe</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Kết nối với chúng tôi</h4>
+					<div class="social-links_u">
+						<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+<footer>
+		<div class="row_u">
+			<div class="mini-footer_u">Copyright © 2021: <a href="index.html">KTYT</a></div>
+		</div>
+	</footer>
+</body>
+</html>

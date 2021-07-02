@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Đọc sách - Kiến Thức Y Tế</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../mycss/vinhuy.css">
+	<link rel="stylesheet" href="../mycss/mycssKTYT.css">
+	<script src="../myscript/scriptKTMT.js"></script>
+	<script src="../Bootstrap/jquery.min.js"></script>
+	<script src="../Bootstrap/popper.min.js"></script>
+	<script src="../Bootstrap/bootstrap.min.js"></script>
+	<script src="../Bootstrap/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+	<div class='thetop'></div>
+	<div class="container topp">
+		<div class="row">
+			<div class="col-lg-5">
+				<a href="index.html">
+					<img src="../images/logoKTYT.png" style="width:240px;">	
+				</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-dark navbar-expand-lg text-white">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="../index.html" class="nav-link text-white">Trang chủ</a></li>
+
+					<!-- Dropdown  -->
+					<li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop" data-bs-toggle="dropdown">Dấu hiệu bệnh</a>
+						<div class="dropdown-menu" aria-labelledby="navDrop">
+							<div class="container ">
+								<div class="subnav-content">
+									<input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+									<div class="navDrop1">
+										<a href="#company">Co giật</a>
+										<a href="#company">Chán ăn</a>
+										<a href="#company">Chóng mặt</a>
+										<a href="#company">Chảy mồ hôi</a>
+										<a href="#company">Chảy máu mũi</a>
+										<a href="#company">Chấm đỏ</a>
+										<a href="#company">Chảy máu chân răng</a>
+										<a href="#company">Dị ứng</a>
+										<a href="#company">Đau đầu</a>
+										<a href="#company">Đốm nhỏ trên da</a>
+										<a href="#company">Đau bụng</a>
+										<a href="#company">Đau vai gáy</a>
+										<a href="#company">Đau khớp</a>
+										<a href="#company">Đau họng</a>
+										<a href="#company">Ho Khan</a>
+										<a href="#company">Hoa mắt</a>
+										<a href="#company">Kén ăn</a>
+										<a href="#company">Khó thở</a>
+										<a href="#company">Khó tiêu</a>
+										<a href="#company">Mắt mờ</a>
+										<a href="#company">Mệt mỏi</a>
+										<a href="#company">Mẫn cảm</a>
+										<a href="#company">Ngứa</a>
+										<a href="#company">Ngủ không được</a>
+										<a href="#company">Ngộ độc</a>
+										<a href="#company">Nấm chân</a>
+										<a href="#company">Ù tai</a>
+										<a href="#company">Sùi bọt mép</a>
+										<a href="#company">Sứng vù</a>
+										<a href="#company">Tức ngực</a>
+										<a href="#company">Trẻ khóc</a>
+										<a href="#company">Tiểu ra máu</a>
+										<a href="#company">...</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown  -->
+
+					<li class="nav-item"><a href="../BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+					<li class="nav-item"><a href="../SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+					<li class="nav-item"><a href="../NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+					<li class="nav-item"><a href="../KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+					<li class="nav-item"><a href="../CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+					<li class="nav-item"><a href="../TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">Khác</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div id="mySidepanel" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 1px 13px 1px 13px;">×</a>
+		<a href="#">Fanpage</a>
+		<a href="#">Group</a>
+		<a href="#">Donate</a>
+		<a href="#">Trợ giúp</a>
+	</div>
+
+
+	<div class="scrolltop">
+		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+	</div>
+
+
+	<div id="mySidenav">
+		<a href="../CuaHangSucKhoe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+		<a href="../KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+	</div>
+
+	<div class="container trang">
+		<br><h3><b>Thói quen đọc sách: Những lợi ích sức khỏe tuyệt vời</b></h3><br>
+		<h5>Đọc sách đem lại rất nhiều lợi ích, điều này tất cả chúng ta đều đã biết. Đọc sách giúp bổ sung kiến thức, mở rộng vốn từ hay cũng là một hình thức giải trí. Tuy nhiên, ở bài này KTYT sẽ đề cập đến lợi ích của thói quen đọc sách theo khía cạnh y khoa. Các bạn cùng tìm hiểu với KTYT nhé!</h5><br>
+		<center><img src="../images/sach-pages.jpg" style="width: 500px"></center><br>
+
+		<h4><b>1. Đọc sách giúp kích thích não bộ</b></h4>
+		<p>Cho đến nay đã có nhiều nghiên cứu cho thấy hiệu quả của việc đọc sách tác động lên não bộ.</p>
+		<p>Sử dụng MRI não, các nhà nghiên cứu đã xác nhận sự xuất hiện nhiều mạng lưới tín hiệu não ở người đọc sách. Điều này càng rõ ràng và mạnh mẽ hơn ở các đối tượng có thói quen đọc lâu dài.</p>
+		<p>Họ đã quan sát các sóng não trong suốt thời gian đọc sách và những ngày sau đó. Nó cho thấy rằng các vùng não bộ được kết nối nhiều hơn. Đặc biệt, vùng vỏ não cảm giác là được kích thích mạnh mẽ hơn cả. Đây là nơi não tiếp nhận các cảm giác vật lý như chuyển động, đau và đưa ra đáp ứng của cơ thể. Điều này củng cố cho ý kiến rằng đọc sách giúp phát triển não bộ.</p><br>
+
+		<h4><b>2. Giải tỏa căng thẳng – stress</b></h4>
+		<p>Các nghiên cứu tác động của yoga, hài kịch và đọc sách trên việc giảm stress đã được thực hiện.</p>
+		<p>Nghiên cứu chỉ ra rằng 30 phút đọc sách có thể giúp giảm huyết áp, nhịp tim và giải tỏa căng thẳng. Hiệu quả này tương tự như việc tập yoga hay xem hài đem lại.</p><br>
+		
+		<h4><b>3. Thói quen đọc sách đem lại giấc ngủ sâu</b></h4>
+		<p>Các bác sĩ khuyến cáo rằng đọc sách nên là 1 phần trong thói quen ngủ hằng ngày của bạn.</p>
+		<p>Họ cũng chỉ ra rằng việc đọc sách in là lựa chọn tốt hơn so với các thiết bị điện tử. Bởi vì ánh sáng xanh từ các thiết bị điện tử gây ảnh hưởng tới giấc ngủ và sức khỏe về lâu dài.</p>
+
+		<h4><b>4. Giảm nguy cơ mắc các bệnh suy giảm nhận thức liên quan đến tuổi tác</b></h4>
+		<p>Các nhà khoa học cho rằng việc đọc sách là một cách để giữ trí não luôn minh mẫn khi bạn về già.</p>
+		<p>Hiện tại, chưa có bằng chứng rõ ràng cho thấy việc đọc sách có thể ngăn ngừa các bệnh như Alzheimer’s. Tuy nhiên, vẫn có những nghiên cứu cho thấy người lớn tuổi nên đọc và giải các bài toán mỗi ngày. Việc này sẽ giúp họ duy trì và cải thiện khả năng nhận thức.</p>
+		<p>Nghiên cứu khác cũng chỉ ra người thường xuyên hoạt động trí não ít nguy cơ mất trí nhớ hơn. Các nguy cơ này bao gồm: mảng, tổn thương và sự hiện diện của các đám protein bất thường.</p><br>
+
+		<h4><b>5. Giảm triệu chứng của trầm cảm</b></h4>
+		<p>Người bị trầm cảm thường có xu hướng cảm thấy cô đơn và bị xa lánh. </p>
+		<p>Đọc 1 quyển tiểu thuyết có thể giúp bạn tạm thời thoát khỏi thế giới thực tại và cuốn vào những cảm xúc của nhân vật. Đó chính là cách môt quyển sách có thể giúp người bị trầm cảm thấy khá hơn.</p><br>
+
+		<h4><b>6. Thói quen đọc sách có thể giúp bạn tăng tuổi thọ</b></h4>
+		<p>Một số nghiên cứu cho thấy kết quả rằng những người đọc sách sống lâu hơn. Con số là khoảng 2 năm so với những người không đọc hoặc đọc các hình thức truyền thông khác.</p>
+		<p>Với hơn 3 tiếng rưỡi đọc sách mỗi tuần, bạn có khả năng tăng tuổi thọ hơn 23% so với những người không đọc gì cả.</p><br>
+
+		<h4><b>7. Vậy tôi nên lựa chọn loại sách nào cho thói quen đọc sách của tôi?</b></h4>
+		<p>Câu trả lời đó là: Bất cứ thứ gì bạn có thể cầm được trên tay của bạn.</p>
+		<p>Bạn có thể đọc truyện, tiểu thuyết, bất cứ loại sách hay tài liệu nào bạn có. Hiện nay, mọi người đều có thể truy cập các thư viện sách trực tuyến từ điện thoại di động hoặc máy tính bảng.</p>
+		<p>Nếu bạn không có quá nhiều thời gian, có thể dành một vài phút mỗi ngày cho một blog hoặc trang web về một chủ đề bạn thích. Nếu bạn đang tìm kiếm một không gian mới, thể loại giả tưởng hoặc tiểu thuyết lịch sử có thể giúp bạn.</p>
+		<b>Một điều cần lưu ý: Đừng chỉ đọc trên thiết bị điện tử. Hãy đọc sách in, càng nhiều nếu có thế!</b>
+		<p>Rất nhiều nghiên cứu đã chỉ ra rằng những người đọc sách in có khả năng hiểu và nhớ những gì họ đọc nhiều hơn. Điều đó có thể hiểu một phần, bởi vì mọi người có xu hướng đọc sách in chậm hơn so với khi đọc trên thiết bị điện tử.</p><br>
+
+		<p>Như vậy, có thể hiểu thói quen đọc sách tác động rất nhiều lên sức khỏe của bạn.</p>
+		<b><i>Vì vậy, hãy hình thành thói quen đọc sách bắt đầu từ hôm nay. Điều đặc biệt quan trọng, đó là đọc càng nhiều càng tốt. Vì ảnh hưởng của việc đọc cần được tích lũy! Tuy nhiên, không bao giờ là quá muộn để bắt đầu với nhiều lợi ích về sức khỏe đang chờ bạn trong mỗi trang của một cuốn sách hay. Hãy bắt đầu với việc cùng KTYT đọc và tìm hiểu những bài viết về sức khỏe, bạn nhé!</i></b>
+		<br><br><br><br>
+		
+
+	</div>
+
+
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 50 ) {
+				$('.scrolltop:hidden').stop(true, true).fadeIn();
+			} else {
+				$('.scrolltop').stop(true, true).fadeOut();
+			}
+		});
+		$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+	</script>
+
+
+	<footer class="footer_u">
+		<div class="container_u">
+			<div class="row_u">
+				<div class="footer-col_u">
+					<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+					<form>
+						<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+						<br>
+						<button class="btn_u">Đăng Ký</button>
+					</form>
+				</div>
+				<div class="footer-col_u">
+					<h4>Hỗ trợ</h4>
+					<ul>
+						<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Về Website</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Khám phá</h4>
+					<ul>
+						<li><a href="../index.html">Trang chủ</a></li>
+						<li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+						<li><a href="../SoCuu.html">Sơ cứu</a></li>
+						<li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+						<li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+						<li><a href="../TinTuc.html">Tin tức</a></li>
+						<li><a href="../CuaHangSucKhoe.html">Cửa hàng sức khỏe</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Kết nối với chúng tôi</h4>
+					<div class="social-links_u">
+						<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<footer>
+		<div class="row_u">
+			<div class="mini-footer_u">Copyright © 2021: <a href="index.html">KTYT</a></div>
+		</div>
+	</footer>
+</body>
+</html>

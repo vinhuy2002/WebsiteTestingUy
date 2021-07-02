@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bệnh sốt - Kiến Thức Y Tế</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../mycss/vinhuy.css">
+	<link rel="stylesheet" href="../mycss/mycssKTYT.css">
+	<script src="../myscript/scriptKTMT.js"></script>
+	<script src="../Bootstrap/jquery.min.js"></script>
+	<script src="../Bootstrap/popper.min.js"></script>
+	<script src="../Bootstrap/bootstrap.min.js"></script>
+	<script src="../Bootstrap/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+	<div class='thetop'></div>
+	<div class="container topp">
+		<div class="row">
+			<div class="col-lg-5">
+				<a href="index.html">
+					<img src="../images/logoKTYT.png" style="width:240px;">	
+				</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-dark navbar-expand-lg text-white">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="../index.html" class="nav-link text-white">Trang chủ</a></li>
+
+					<!-- Dropdown  -->
+					<li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop" data-bs-toggle="dropdown">Dấu hiệu bệnh</a>
+						<div class="dropdown-menu" aria-labelledby="navDrop">
+							<div class="container ">
+								<div class="subnav-content">
+									<input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+									<div class="navDrop1">
+										<a href="#company">Co giật</a>
+										<a href="#company">Chán ăn</a>
+										<a href="#company">Chóng mặt</a>
+										<a href="#company">Chảy mồ hôi</a>
+										<a href="#company">Chảy máu mũi</a>
+										<a href="#company">Chấm đỏ</a>
+										<a href="#company">Chảy máu chân răng</a>
+										<a href="#company">Dị ứng</a>
+										<a href="#company">Đau đầu</a>
+										<a href="#company">Đốm nhỏ trên da</a>
+										<a href="#company">Đau bụng</a>
+										<a href="#company">Đau vai gáy</a>
+										<a href="#company">Đau khớp</a>
+										<a href="#company">Đau họng</a>
+										<a href="#company">Ho Khan</a>
+										<a href="#company">Hoa mắt</a>
+										<a href="#company">Kén ăn</a>
+										<a href="#company">Khó thở</a>
+										<a href="#company">Khó tiêu</a>
+										<a href="#company">Mắt mờ</a>
+										<a href="#company">Mệt mỏi</a>
+										<a href="#company">Mẫn cảm</a>
+										<a href="#company">Ngứa</a>
+										<a href="#company">Ngủ không được</a>
+										<a href="#company">Ngộ độc</a>
+										<a href="#company">Nấm chân</a>
+										<a href="#company">Ù tai</a>
+										<a href="#company">Sùi bọt mép</a>
+										<a href="#company">Sứng vù</a>
+										<a href="#company">Tức ngực</a>
+										<a href="#company">Trẻ khóc</a>
+										<a href="#company">Tiểu ra máu</a>
+										<a href="#company">...</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown  -->
+
+					<li class="nav-item"><a href="../BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+					<li class="nav-item"><a href="../SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+					<li class="nav-item"><a href="../NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+					<li class="nav-item"><a href="../KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+					<li class="nav-item"><a href="../CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+					<li class="nav-item"><a href="../TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">Khác</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div id="mySidepanel" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="#">Fanpage</a>
+		<a href="#">Group</a>
+		<a href="#">Donate</a>
+		<a href="#">Trợ giúp</a>
+	</div>
+
+
+	<div class="scrolltop">
+		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+	</div>
+
+
+	<div id="mySidenav">
+		<a href="../CuaHangSucKhoe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+		<a href="../KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+	</div>
+
+	<div class="container trang">
+		<br><h3><b>Bệnh nhân bị sốt: Nên điều trị như thế nào?</b></h3><br>
+		<h5>Hiện nay đang là mùa hè nắng nóng, cũng là thời điểm mà nhiều dịch bệnh bùng phát. Sốt là một triệu chứng thường gặp của nhiều bệnh, đặc biệt là sốt do nhiễm vi rút đang bùng lên thành dịch tại nhiều địa phương từ vùng nông thôn đến thành phố. Việc nắm được một số kiến thức cơ bản về sốt là rất cần thiết để mọi người tự tin hơn trong chăm sóc sức khỏe bản thân và gia đình.</h5><br>
+		<center><img src="../images/sot-pages.jpg" style="width: 600px"><br><br></center>
+		<h4><b>Thân nhiệt của người bị sốt:</b><br></h4>
+		<p>Sốt là một triệu chứng phổ biến trên lâm sàng. Gọi là sốt khi thân nhiệt trên 37,5 độ C nếu cặp ở miệng hoặc nhiệt độ đo ở hậu môn trên 38 độ C.</p>
+		<p>Thông thường, nhiệt độ cơ thể của người thay đổi khi vận động nhiều như chạy, nhảy hoặc trẻ em lúc đùa nghịch. Đặc biệt, trẻ em rất hay bị sốt nhưng không phải tất cả sốt đều nguy hiểm.</p>
+		<p>Ngoài ra, sốt không phải là bệnh. Đó là triệu chứng của nhiều nguyên nhân, chủ yếu là do vi rút, hoặc nhiễm khuẩn. Bên cạnh đó, sốt cũng có thể do dị ứng với thuốc, ở trẻ em còn có thể sốt do mọc răng hay sau chích ngừa vaccine…</p><br>
+		<h4><b>Khi bị sốt, có thể gặp các triệu chứng sau:</b></h4>
+		<p>	- Rét run, gai lạnh.</p>
+		<p>	- Khát nước.</p>
+		<p>	- Da đỏ, nóng, ẩm.</p>
+		<p>	- Rối loạn ý thức như mất định hướng, mê sảng.</p>
+		<p>	- Co giật</p>
+		<p>	Khi bệnh nhân bị sốt có thể điều trị tại nhà nếu:</p>
+		<p>	Khi người bệnh sốt dưới hoặc bằng 39 độ C, ở trẻ em thì vẫn ăn và chơi bình thường, trong khoảng thời gian 2 ngày đầu, có thể điều trị cho người bệnh tại nhà bằng phương pháp vật lý như: Cho bệnh nhân ở nơi thoáng mát, có thể trong nhiệt độ điều hoà từ 25 đến 28 độ, mặc quần áo thoáng, thấm mồ hôi, uống nhiều nước, lau người, hoặc tắm bằng nước ấm…</p>
+		<p>Dùng thuốc hạ sốt khi người bệnh sốt >= 39 độ C. Thuốc thường được sử dụng an toàn là Paracetamol liều 10 đến 15 mg/ kg/ lần, có thể dùng lần tiếp theo sau 4 đến 6 giờ.</p><br>
+
+		<h4><b>Khi nào cần đưa người bệnh bị sốt đến bệnh viện?</b></h4>
+		<h4><b>Cần đưa người bệnh đến bệnh viện khi:</b></h4><br>
+		<p>- Bệnh nhân sốt cao > 39 độ C không giảm được nhiệt độ khi điều trị bằng thuốc hạ sốt và các phương pháp vật lý phối hợp.</p>
+		<p>- Hoặc sốt rất cao >= 41 độ C.</p>
+		<p>- Ở trẻ em cần đặc biệt chú ý khi có các dấu hiệu bất thường như: bỏ bú, quấy khóc nhiều, không chơi, sốt li bì, co giật, sảng, thở nhanh, thở khó, tiêu chảy, phân có nhày máu….</p>
+		<p>- Bệnh nhân sốt trên 2 ngày.</p><br>
+
+		<h4><b>Cách xử trí khi người bệnh bị sốt</b></h4>
+		<p>Khi bệnh nhân đang lên cơn sốt:</p>
+		<p>- Để người bệnh nằm ở nơi thông thoáng khí, không có gió lùa và hạn chế nhiều người vây quanh.</p>
+		<p>- Cặp nhiệt độ: Có thể đặt nhiệt kế ở dưới nách hoặc ở hậu môn của bệnh nhân. Nhiệt kế phải được giữ trong nách ít nhất 3 phút, cánh tay của bệnh nhân áp sát vào ngực.</p>
+		<p>- Nếu thân nhiệt của người bệnh không quá 39 độ C: Bệnh nhân cần được cởi quần áo ấm, mặc thoáng mát, không đắp chăn. Đặc biệt, theo dõi nhiệt độ của người bệnh thường xuyên, cứ khoảng 1-2 giờ đo 1 lần.</p>
+		<p>Chườm mát để hạ sốt bằng cách: lau người, hoặc tắm cho người bệnh bằng nước ấm. Dùng khăn bông mềm, sạch, nhúng vào chậu nước ấm, vắt hơi ráo rồi lau lên khắp thân mình, nhất là các vị trí như nách, bẹn, chờ bốc hơi thì lau tiếp cho tới khi thân nhiệt hạ xuống dưới 38 độ C, mặc lại quần áo cho người bệnh. Cần phải theo dõi nếu thân nhiệt lại tăng thì lại chườm tiếp.</p>
+		<p>- Nếu thân nhiệt bệnh nhân từ 39 độ C trở lên: Cần uống thuốc hạ sốt paracetamol theo đúng liều lượng, cân nặng và khoảng cách giữ hai lần uống thuốc ghi trong hướng dẫn sử dụng. Nếu bệnh nhân buồn nôn không uống được thuốc thì có thể dùng viên đạn nhét hậu môn.</p>
+		<p>- Cho người bệnh uống nhiều nước, nếu ở trẻ còn bú thì cho bú nhiều hơn. Bù nước và điện giải cho bệnh nhân bằng Oresol theo đúng hướng dẫn sử dụng.</p>
+		<p>- Cho bệnh nhân ăn uống bình thường bằng các loại thức ăn lỏng, dễ tiêu như cháo, súp,… uống thêm các loại nước hoa quả như cam, chanh,…</p><br><br>
+
+	</div>
+
+
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 50 ) {
+				$('.scrolltop:hidden').stop(true, true).fadeIn();
+			} else {
+				$('.scrolltop').stop(true, true).fadeOut();
+			}
+		});
+		$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+	</script>
+
+
+	<footer class="footer_u">
+		<div class="container_u">
+			<div class="row_u">
+				<div class="footer-col_u">
+					<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+					<form>
+						<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+						<br>
+						<button class="btn_u">Đăng Ký</button>
+					</form>
+				</div>
+				<div class="footer-col_u">
+					<h4>Hỗ trợ</h4>
+					<ul>
+						<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Về Website</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Khám phá</h4>
+					<ul>
+						<li><a href="../index.html">Trang chủ</a></li>
+						<li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+						<li><a href="../SoCuu.html">Sơ cứu</a></li>
+						<li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+						<li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+						<li><a href="../TinTuc.html">Tin tức</a></li>
+						<li><a href="../CuaHangSucKhoe.html">Cửa hàng sức khỏe</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Kết nối với chúng tôi</h4>
+					<div class="social-links_u">
+						<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+<footer>
+		<div class="row_u">
+			<div class="mini-footer_u">Copyright © 2021: <a href="index.html">KTYT</a></div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bệnh thủy đậu - Kiến Thức Y Tế</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../mycss/vinhuy.css">
+	<link rel="stylesheet" href="../mycss/mycssKTYT.css">
+	<script src="../myscript/scriptKTMT.js"></script>
+	<script src="../Bootstrap/jquery.min.js"></script>
+	<script src="../Bootstrap/popper.min.js"></script>
+	<script src="../Bootstrap/bootstrap.min.js"></script>
+	<script src="../Bootstrap/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+	<div class='thetop'></div>
+	<div class="container topp">
+		<div class="row">
+			<div class="col-lg-5">
+				<a href="index.html">
+					<img src="../images/logoKTYT.png" style="width:240px;">	
+				</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-dark navbar-expand-lg text-white">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="../index.html" class="nav-link text-white">Trang chủ</a></li>
+
+					<!-- Dropdown  -->
+					<li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop" data-bs-toggle="dropdown">Dấu hiệu bệnh</a>
+						<div class="dropdown-menu" aria-labelledby="navDrop">
+							<div class="container ">
+								<div class="subnav-content">
+									<input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+									<div class="navDrop1">
+										<a href="#company">Co giật</a>
+										<a href="#company">Chán ăn</a>
+										<a href="#company">Chóng mặt</a>
+										<a href="#company">Chảy mồ hôi</a>
+										<a href="#company">Chảy máu mũi</a>
+										<a href="#company">Chấm đỏ</a>
+										<a href="#company">Chảy máu chân răng</a>
+										<a href="#company">Dị ứng</a>
+										<a href="#company">Đau đầu</a>
+										<a href="#company">Đốm nhỏ trên da</a>
+										<a href="#company">Đau bụng</a>
+										<a href="#company">Đau vai gáy</a>
+										<a href="#company">Đau khớp</a>
+										<a href="#company">Đau họng</a>
+										<a href="#company">Ho Khan</a>
+										<a href="#company">Hoa mắt</a>
+										<a href="#company">Kén ăn</a>
+										<a href="#company">Khó thở</a>
+										<a href="#company">Khó tiêu</a>
+										<a href="#company">Mắt mờ</a>
+										<a href="#company">Mệt mỏi</a>
+										<a href="#company">Mẫn cảm</a>
+										<a href="#company">Ngứa</a>
+										<a href="#company">Ngủ không được</a>
+										<a href="#company">Ngộ độc</a>
+										<a href="#company">Nấm chân</a>
+										<a href="#company">Ù tai</a>
+										<a href="#company">Sùi bọt mép</a>
+										<a href="#company">Sứng vù</a>
+										<a href="#company">Tức ngực</a>
+										<a href="#company">Trẻ khóc</a>
+										<a href="#company">Tiểu ra máu</a>
+										<a href="#company">...</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown  -->
+
+					<li class="nav-item"><a href="../BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+					<li class="nav-item"><a href="../SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+					<li class="nav-item"><a href="../NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+					<li class="nav-item"><a href="../KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+					<li class="nav-item"><a href="../CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+					<li class="nav-item"><a href="../TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">Khác</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+
+	<div id="mySidepanel" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 1px 13px 1px 13px;">×</a>
+		<a href="#">Fanpage</a>
+		<a href="#">Group</a>
+		<a href="#">Donate</a>
+		<a href="#">Trợ giúp</a>
+	</div>
+
+
+	<div class="scrolltop">
+		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+	</div>
+
+
+	<div id="mySidenav">
+		<a href="../CuaHangYTe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+		<a href="../KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+	</div>
+
+	<div class="container trang">
+		<br><h3><b>Chăm sóc trẻ bị thủy đậu đúng cách tránh các biến chứng nguy hiểm</b></h3><br>
+		<h5>Bệnh thuỷ đậu lưu hành quanh năm trên phạm vi cả nước, nhưng mùa đông xuân là thời điểm bùng phát. Tại các bệnh viện, số ca mắc thuỷ đậu có dấu hiệu tăng lên với nhiều ca biến chứng nguy hiểm. Đây là một loại bệnh truyền nhiễm cấp tính, chủ yếu thường gặp ở trẻ em với khả năng lây lan rất cao. Để giúp cho người nhà bệnh nhân biết cách chăm sóc trẻ và phát hiện xử trí kịp thời khi trẻ bị thủy đậu.</h4><br><br>
+			<h4><b>1. Bệnh thủy đậu</b></h5>
+				<p>Bệnh thủy đậu là một bệnh truyền nhiễm do một loại virus mang tên Varicella Zoster Virus gây ra và chiếm trên 90% số đối tượng chưa tiêm phòng vaccine có khả năng mắc bệnh. Bệnh thường xảy ra vào mùa đông xuân và đối tượng trẻ bị thủy đậu chủ yếu là trẻ em dưới 10 tuổi.</p>
+				<center><img src="../images/thuy-dau-pages.jpg" style="width: 500px"><br><br></center>
+				<p>Virus gây bệnh thủy đậu lây chủ yếu qua đường không khí, người lành dễ bị nhiễm bệnh nếu hít phải những giọt nước bọt bắn ra khi bệnh nhân thủy đậu ho, hắt hơi hoặc chảy mũi,..., nhất là trẻ em.</p>
+				<p>Bệnh có thể lây từ nốt phỏng khi bị vỡ ra, từ vùng da bị tổn thương hoặc lở loét của người mắc bệnh. Đặc biệt, phụ nữ mang thai không may bị nhiễm bệnh sẽ rất dễ lây cho thai nhi thông qua nhau thai.</p>
+
+				<h4><b>2. Triệu chứng điển hình của bệnh thủy đậu</b><br></h4>
+				<p>Thời kỳ ủ bệnh : Từ 14 - 17 ngày (thường không có triệu chứng lâm sàng).</p>
+				<p>Thời kỳ khởi phát : Khoảng 1 ngày, có thể không sốt hoặc sốt nhẹ, trẻ nhỏ thường không chịu chơi, quấy khóc. Có trường hợp sốt cao 39 - 40 độ C, trằn trọc mê sảng co giật, kèm theo viêm họng, viêm xuất tiết đường hô hấp trên.</p>
+				<p>Thời kỳ toàn phát (thời kỳ mọc ban):</p>
+				<li>Thoạt đầu là những ban dát màu đỏ, vài giờ sau thành nốt phỏng nước trong, rất nông như đặt trên mặt da, sau từ 24 đến 48 giờ ngả màu vàng, có hình cầu nổi trên mặt da 2mm. Ban mọc rải rác toàn thân kể cả chân tóc và trong miệng, hầu như không có ở lòng bàn chân, bàn tay.</li>
+				<li>Ban mọc 3 - 4 ngày một đợt, vì vậy trên một vùng da có thể thấy nốt ban ở các độ tuổi khác nhau.</li>
+				<li>Sau từ 4 - 6 ngày, nốt thuỷ đậu tự khô, đóng vảy màu nâu sẫm và bong ra sau một tuần, không để lại sẹo vĩnh viễn, trừ khi có loét và bội nhiễm</li>
+				<li>Biến chứng: Bệnh thủy đậu có thể gây nhiễm trùng da, nhiễm trùng máu, viêm phổi, viêm não, nhiễm trùng xương, khớp,..., nếu không được chữa trị kịp thời.</li><br>
+
+				<h4><b>3. Hướng dẫn chăm sóc trẻ bị thủy đậu</b></h4>
+				<p>Cho trẻ bị thủy đậu nằm trong phòng cách ly áp lực âm để phòng tránh lây nhiễm cho người khác, khi ra viện vẫn phải cách ly đến khi khỏi hẳn.</p>
+				<li>Người chăm sóc cần đeo khẩu trang N95 (nếu chưa bị thủy đậu) hoặc khẩu trang ngoại khoa (nếu đã từng bị bệnh hoặc đã tiêm phòng thủy đậu). Nếu phải đưa trẻ ra khỏi phòng để khám chuyên khoa hoặc làm các thăm dò khác cần đeo khẩu trang cho trẻ. Vệ sinh tay trước và sau mỗi lần chăm sóc trẻ.</li>
+				<li>Dùng dung dịch xanh - methylen hoặc Castellani để chấm lên các nốt phỏng đã vỡ hoặc mọng nước.</li>
+				<li>Phối hợp dùng thuốc kháng sinh và/hoặc thuốc hạ sốt cho trẻ bị thủy đậu theo chỉ dẫn của nhân viên y tế.</li>
+				<li>Vệ sinh mũi họng hàng ngày cho trẻ bằng dung dịch nước muối sinh lý 0,9%.</li>
+				<li>Mặc quần áo vải mềm, thấm hút mồ hôi và đặc biệt chú ý tới việc đảm bảo vệ sinh da cho trẻ để tránh xảy ra biến chứng: Thay quần áo và tắm rửa hàng ngày cho trẻ bằng nước ấm trong phòng tắm.</li>
+				<li>Cho trẻ ăn các thức ăn mềm, lỏng, dễ tiêu, uống nhiều nước nhất là nước hoa quả, ăn nguội nếu trong miệng có các nốt phỏng/loét.</li>
+				<li>Dùng dung dịch xanh - methylen hoặc Castellani để chấm lên các nốt phỏng đã vỡ hoặc mọng nước.</li>
+				<b>Lưu ý:</b>
+				<li>Tránh làm vỡ các nốt thủy đậu vì dễ gây bội nhiễm và có thể tạo thành sẹo.</li>
+				<li>Không sử dụng các loại lá cây để tắm và đắp lên nốt thủy đậu của người bệnh.</li>
+				<li>Không được dùng những loại thuốc uống hoặc thuốc bôi ngoài da khi không có chỉ định của bác sĩ.</li>
+				<p>Bệnh thủy đậu là bệnh lý nguy hiểm, có thể để lại biến chứng nếu như không được thăm khám và chăm sóc tốt. Vì thế khi trẻ có dấu hiệu mắc bệnh thủy đậu thì các bậc cha mẹ cần sớm đưa trẻ đến các cơ sở y tế, bệnh viện chuyên khoa để thăm khám và điều trị.</p>
+				<br>
+				<br>
+
+			</div>
+
+			<script type="text/javascript">
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 50 ) {
+						$('.scrolltop:hidden').stop(true, true).fadeIn();
+					} else {
+						$('.scrolltop').stop(true, true).fadeOut();
+					}
+				});
+				$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+			</script>
+
+
+			<footer class="footer_u">
+				<div class="container_u">
+					<div class="row_u">
+						<div class="footer-col_u">
+							<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+							<form>
+								<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+								<br>
+								<button class="btn_u">Đăng Ký</button>
+							</form>
+						</div>
+						<div class="footer-col_u">
+							<h4>Hỗ trợ</h4>
+							<ul>
+								<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Về Website</a></li>
+							</ul>
+						</div>
+						<div class="footer-col_u">
+							<h4>Khám phá</h4>
+							<ul>
+								<li><a href="../index.html">Trang chủ</a></li>
+								<li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+								<li><a href="../SoCuu.html">Sơ cứu</a></li>
+								<li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+								<li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+								<li><a href="../TinTuc.html">Tin tức</a></li>
+								<li><a href="../CuaHangYTe.html">Cửa hàng sức khỏe</a></li>
+							</ul>
+						</div>
+						<div class="footer-col_u">
+							<h4>Kết nối với chúng tôi</h4>
+							<div class="social-links_u">
+								<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+
+			<script type="text/javascript">
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 50 ) {
+						$('.scrolltop:hidden').stop(true, true).fadeIn();
+					} else {
+						$('.scrolltop').stop(true, true).fadeOut();
+					}
+				});
+				$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+			</script>
+
+
+			<footer class="footer_u">
+				<div class="container_u">
+					<div class="row_u">
+						<div class="footer-col_u">
+							<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+							<form>
+								<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+								<br>
+								<button class="btn_u">Đăng Ký</button>
+							</form>
+						</div>
+						<div class="footer-col_u">
+							<h4>Hỗ trợ</h4>
+							<ul>
+								<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Về Website</a></li>
+							</ul>
+						</div>
+						<div class="footer-col_u">
+							<h4>Khám phá</h4>
+							<ul>
+								<li><a href="../index.html">Trang chủ</a></li>
+								<li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+								<li><a href="../SoCuu.html">Sơ cứu</a></li>
+								<li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+								<li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+								<li><a href="../TinTuc.html">Tin tức</a></li>
+								<li><a href="../CuaHangYTe.html">Cửa hàng sức khỏe</a></li>
+							</ul>
+						</div>
+						<div class="footer-col_u">
+							<h4>Kết nối với chúng tôi</h4>
+							<div class="social-links_u">
+								<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</footer>
+		<footer>
+				<div class="row_u">
+					<div class="mini-footer_u">Copyright © 2021: <a href="../index.html">KTYT</a></div>
+				</div>
+			</footer>
+
+
+		</body>
+		</html>

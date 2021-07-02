@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Đông trùng hạ thảo - Kiến Thức Y Tế</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../mycss/vinhuy.css">
+	<link rel="stylesheet" href="../mycss/mycssKTYT.css">
+	<script src="../myscript/scriptKTMT.js"></script>
+	<script src="../Bootstrap/jquery.min.js"></script>
+	<script src="../Bootstrap/popper.min.js"></script>
+	<script src="../Bootstrap/bootstrap.min.js"></script>
+	<script src="../Bootstrap/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+	<div class='thetop'></div>
+	<div class="container topp">
+		<div class="row">
+			<div class="col-lg-5">
+				<a href="index.html">
+					<img src="../images/logoKTYT.png" style="width:240px;">	
+				</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-dark navbar-expand-lg text-white">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="../index.html" class="nav-link text-white">Trang chủ</a></li>
+
+					<!-- Dropdown  -->
+					<li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop" data-bs-toggle="dropdown">Dấu hiệu bệnh</a>
+						<div class="dropdown-menu" aria-labelledby="navDrop">
+							<div class="container ">
+								<div class="subnav-content">
+									<input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+									<div class="navDrop1">
+										<a href="#company">Co giật</a>
+										<a href="#company">Chán ăn</a>
+										<a href="#company">Chóng mặt</a>
+										<a href="#company">Chảy mồ hôi</a>
+										<a href="#company">Chảy máu mũi</a>
+										<a href="#company">Chấm đỏ</a>
+										<a href="#company">Chảy máu chân răng</a>
+										<a href="#company">Dị ứng</a>
+										<a href="#company">Đau đầu</a>
+										<a href="#company">Đốm nhỏ trên da</a>
+										<a href="#company">Đau bụng</a>
+										<a href="#company">Đau vai gáy</a>
+										<a href="#company">Đau khớp</a>
+										<a href="#company">Đau họng</a>
+										<a href="#company">Ho Khan</a>
+										<a href="#company">Hoa mắt</a>
+										<a href="#company">Kén ăn</a>
+										<a href="#company">Khó thở</a>
+										<a href="#company">Khó tiêu</a>
+										<a href="#company">Mắt mờ</a>
+										<a href="#company">Mệt mỏi</a>
+										<a href="#company">Mẫn cảm</a>
+										<a href="#company">Ngứa</a>
+										<a href="#company">Ngủ không được</a>
+										<a href="#company">Ngộ độc</a>
+										<a href="#company">Nấm chân</a>
+										<a href="#company">Ù tai</a>
+										<a href="#company">Sùi bọt mép</a>
+										<a href="#company">Sứng vù</a>
+										<a href="#company">Tức ngực</a>
+										<a href="#company">Trẻ khóc</a>
+										<a href="#company">Tiểu ra máu</a>
+										<a href="#company">...</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown  -->
+
+					<li class="nav-item"><a href="../BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+					<li class="nav-item"><a href="../SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+					<li class="nav-item"><a href="../NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+					<li class="nav-item"><a href="../KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+					<li class="nav-item"><a href="../CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+					<li class="nav-item"><a href="../TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">Khác</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div id="mySidepanel" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 1px 13px 1px 13px;">×</a>
+		<a href="#">Fanpage</a>
+		<a href="#">Group</a>
+		<a href="#">Donate</a>
+		<a href="#">Trợ giúp</a>
+	</div>
+
+
+	<div class="scrolltop">
+		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+	</div>
+
+
+	<div id="mySidenav">
+		<a href="../CuaHangSucKhoe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+		<a href="../KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+	</div>
+
+	<div class="container trang">
+		<br><h3><b>Đông trùng hạ thảo có tác dụng gì?</b></h3><br>
+		<h5>Vì sao đông trùng hạ thảo lại được nhiều người “săn đón” ? Thực tế, đông trùng hạ thảo không chỉ khác biệt trong nguồn gốc, mà còn rất đặc biệt trong những công dụng quý mà nó mang lại. Khi sử dụng đúng cách thì đông trùng hạ thảo sẽ phát huy những lợi ích tuyệt vời với sức khỏe con người.</h5><br>
+		<h4><b>1. Tên gọi</b></h4>
+		<p>Tên khoa học: Ophiocordyceps sinensis G.H.Sung, J.M.Sung, Hywel-Jones & Spatafora (2007)</p>
+		<br><h4><b>2. Mô tả</b></h4>
+		<p>
+			<b>Cách nhận biết ngoài tự nhiên:</b>
+			Đông trùng hạ thảo là một dạng cộng sinh giữa một loài nấm túi có tên khoa học là Cordyceps sinensis (Berk.) Sacc với sâu non (ấu trùng) của một loài côn trùng thuộc chi Hepialus. Thường gặp nhất là sâu non của loài Hepialus armoricanus. Ngoài ra còn 40 loài khác thuộc chi Hepialus cũng có thể bị Cordyceps sinensis ký sinh..
+		</p>
+		<center><img src="../images/dong-trung-ha-thao.jpg" style="width: 500px"><br><br></center>
+		<p>
+			<b>Phân loại:</b>
+			Chi nấm Cordyceps có tới 350 loài khác nhau, chỉ riêng ở Trung Quốc đã tìm thấy 60 loài. Tuy nhiên cho đến nay người ta mới chỉ nghiên cứu nhiều nhất được về 2 loài Cordyceps sinensis (Berk.) Sacc. và Cordyceps militaris (L. ex Fr.) Link. Loài thứ hai được gọi là Nhộng trùng thảo
+		</p>
+		<p>
+			<b>Thu hoạch: </b>
+			Vào mùa đông nấm bắt đầu ký sinh vào sâu non và làm chết sâu non vì ăn hết chất dinh dưỡng của chúng. Mùa hè ấm áp nấm bắt đầu mọc ra khỏi sâu như một ngọn cỏ và vươn lên khỏi mặt đất. Đầu của ngọn nấm là một thể đệm (stroma) hình trụ thuôn nhọn. Chỉ phát hiện được ĐTHT vào mùa hè ở một số cao nguyên cao hơn mặt biển từ 3500 đến 5000m
+		</p>
+		<p>
+			<b>Vùng trồng, cách trồng:</b>
+			Đó là các vùng Tây Tạng, Tứ Xuyên, Thanh Hi, Cam Túc, Vân Nam…
+		</p>
+		<p>
+			<b>Bộ phận dùng làm thuốc:</b>
+			Tất cả
+		</p>
+
+		<br><h4><b>3. Thành phần hóa học</b></h4>
+		<p>Các phân tích hoá học cho thấy trong sinh khối (biomass) của ĐTHT có 17 acid amin khác nhau, có D-mannitol, có lipid, có nhiều nguyên tố vi lượng (Al, Si, K, Na…). Quan trọng hơn là trong sinh khối đông trùng hạ thảo ngày càng nhiều hoạt chất quý được phát hiện. Nhiều hoạt chất này có giá trị dược liệu thần kỳ. Trong đó phiải kể đến cordiceptic acid, cordycepin, adenosine, hydroxyethyl-adenosine.</p>
+		<p>Đáng chú ý hơn là nhóm hoạt chất HEAA ( Hydroxy-Ethyl-Adenosine- Analogs). ĐTHT còn có chứa nhiều loại vitamin (trong 100g ĐTHT có 0,12 g vitamin B12; 29,19 mg vitamin A; 116,03 mg vitamin C, ngoài ra còn có vitamin B2 (riboflavin), vitamin E, vitamin K…)</p>
+
+		<br><h4><b>4. Tác dụng dược lý của đông trùng hạ thảo</b></h4>
+		<b>Đông trùng hạ thảo với hệ thống miễn dịch</b>
+		<p>Những nghiên cứu thực nghiệm đã chứng minh đông trùng hạ thảo có khả năng tăng cường hoạt động miễn dịch tế bào cũng như miễn dịch dịch thể. Cụ thể là tác dụng nâng cao hoạt tính của đại thực bào, điều tiết phản ứng miễn dịch của tế bào lympho B, ức chế chọn lọc hoạt tính của tế bào lympho T, làm tăng nồng độ các kháng thể IgG, IgM trong huyết thanh. Mặt khác, đông trùng hạ thảo còn là một vị thuốc ức chế miễn dịch có tác dụng chống sự loại bỏ tổ chức cấy ghép khá tốt.</p>
+		<b>Đông trùng hạ thảo đối với hệ thống tuần hoàn tim, não</b>
+		<p>Đông trùng hạ thảo có tác dụng làm giãn những mạch máu, làm tăng lưu lượng tuần hoàn não và tim thông qua cơ chế hưng phấn thực thể M ở cơ trơn thành mạch. Mặt khác, đông trùng hạ thảo còn có khả năng điều hòa lipit máu, làm giảm cholesterol, lipoprotein, phòng ngừa xơ vữa động mạch.</p>
+		<b>Đông trùng hạ thảo đối với hệ hô hấp</b>
+		<p>Đông trùng hạ thảo có tác dụng bình xuyễn, trừ đàm và phòng chống khí phế thũng. Điều này làm sáng tỏ quan điểm của cổ nhân cho rằng, đông trùng hạ thảo có khả năng “bảo phế, ích thận” và “dĩ lao khái”.</p>
+		<b>Đông trùng hạ thảo đối với hệ thống nội tiết</b>
+		<p>Trên động vật thực nghiệm đông trùng hạ thảo có tác dụng làm tăng trọng lượng tuyến vỏ thượng thận và tăng tổng hợp các hormon tuyến này, đồng thời cũng có tác dụng tương tự như hormon nam tính và làm tăng trọng lượng tinh hoàn cũng như các cơ quan sinh dục phụ trên động vật thực nghiệm. Ngoài ra, đông trùng hạ thảo còn có tác dụng chống ung thư, chống viêm nhiễm, chống quá trình lão hóa và trấn tĩnh chống co giật.</p>
+		<p>Như vậy, có thể thấy đông trùng hạ thảo quả thực là một trong những vị thuốc đông y có khả năng cải thiện đời sống tình dục trực tiếp hoặc gián tiếp thông qua tác dụng nâng đỡ bồi bổ cơ thể. Điều này đã được y học cổ truyền biết đến từ rất sớm. </p>
+		
+		<br><h4><b>5. Tính vị quy kinh</b></h4>
+		<p>Theo các cuốn sách cổ, đông trùng hạ thảo có vị ngọt, tính ấm vào hai kinh thận và phế</p>
+
+		<br><h4><b>6. Công dụng – chủ trị</b></h4>
+		<p>Bổ phế, ích can, thận, bổ tinh tủy, bổ dưỡng tạng phủ, chỉ huyết, hóa đàm. Do vậy mà trong Đông y đông trùng hạ thảo được dùng hỗ trợ điều trị các bệnh như viêm phế quản, ho lâu ngày, ho ra máu, hen suyễn, ho lao, bồi bổ cơ thể. Hoặc các bệnh về thận tinh như liệt dương, di tinh, tảo tiết, đau lưng, mỏi gối, có thể dùng dưới dạng bột.</p>
+
+		<br><h4><b>7. Liều dùng – kiêng kỵ</b></h4>
+		<p>Liều dùng: Ngày uống 6 – 12 g dùng với hình thức ngâm rượu uống.</p>
+		<p>Độ độc của thuốc hết sức thấp, với liều 5g/kg chuột bạch, chuột không có hiện tượng ngộ độc nào. Với liều 10 -20 kg thể trọng một phần chuột thí nghiệm bị chết, với liều 30 – 50g/kg thể trọng toàn số chuột thí nghiệm bị chết.</p>
+
+		<br><h4><b>8. Ứng dụng lâm sàng</b></h4>
+		<p>Trên lâm sàng, các nhà y học cổ truyền trong và ngoài nước, đã nghiên cứu dùng đông trùng hạ thảo điều trị thành công khá nhiều chứng bệnh như rối loạn lipit máu, viêm phế quản mãn và hen phế quản, viêm thận mãn tính và suy thận, rối loạn nhịp tim, cao huyết áp, viêm mũi dị ứng, viêm gan B mạn tính, Ung thư phổi (có tác dụng hỗ trợ) và thiểu năng sinh dục.</p>
+		<p>Viện nghiên cứu nội tiết Thượng Hải (Trung Quốc) cũng đã dùng ĐTHT điều trị cho các bệnh nhân bị liệt dương đạt kết quả khá tốt.</p>
+		<b>Thuốc chữa người già suy nhược, viêm khí quản mãn tính:</b>
+		<p>Đông trùng hạ thảo 10 g, khoản đông hoa 6g, tang bạch bì 8g, cam thảo 3g, tiểu hồi hương 2g, nước 600ml. Sắc còn 200ml. Chia 3 lần uống trong ngày. Chữa bệnh suy nhược của người già yếu, viêm khí quản mãn tính. </p>
+		<b>Thuốc bổ đông trùng hạ thảo:</b>
+		<p>Đông trùng hạ thảo 15 con. Vịt già một con, bỏ lông ruột cho sạch. Bổ đôi đầu vịt, cho đông trùng hạ thảo vào. Lấy dây gai buộc kín lại. Cài đầu vào bụng vịt rồi thêm mắm muối hầm như thường lệ, đem cho người ốm mới khỏi thân thể có hư yếu ăn. Người ta cho rằng ăn một con vịt như vậy cũng như uống 40g Nhân sâm.</p>
+
+		<br><br>
+	</div>
+
+
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 50 ) {
+				$('.scrolltop:hidden').stop(true, true).fadeIn();
+			} else {
+				$('.scrolltop').stop(true, true).fadeOut();
+			}
+		});
+		$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+	</script>
+
+
+	<footer class="footer_u">
+		<div class="container_u">
+			<div class="row_u">
+				<div class="footer-col_u">
+					<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+					<form>
+						<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+						<br>
+						<button class="btn_u">Đăng Ký</button>
+					</form>
+				</div>
+				<div class="footer-col_u">
+					<h4>Hỗ trợ</h4>
+					<ul>
+						<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Về Website</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Khám phá</h4>
+					<ul>
+						<li><a href="../index.html">Trang chủ</a></li>
+						<li><a href="../BenhThuongGap.html">Các bệnh thường gặp</a></li>
+						<li><a href="../SoCuu.html">Sơ cứu</a></li>
+						<li><a href="../NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+						<li><a href="../KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+						<li><a href="../TinTuc.html">Tin tức</a></li>
+						<li><a href="../CuaHangSucKhoe.html">Cửa hàng sức khỏe</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Kết nối với chúng tôi</h4>
+					<div class="social-links_u">
+						<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<footer>
+		<div class="row_u">
+			<div class="mini-footer_u">Copyright © 2021: <a href="index.html">KTYT</a></div>
+		</div>
+	</footer>
+</body>
+</html>

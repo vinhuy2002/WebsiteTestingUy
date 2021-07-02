@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mycss/admin.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="Bootstrap/popper.min.js"></script>
+    <script src="Bootstrap/jquery.min.js"></script>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark p-3 wcolor">
+     <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+        <a href="#" class="navbar-brand">
+            Kiến Thức Y Tế
+        </a>
+        <button class="navbar-toggler navbar-dark bg-primary collapsed mb-3 d-md-none px-2" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="slidebar" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-md-end mt-3 mt-md-0 mr-5">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropMenu" data-toggle="dropdown" aria-expanded="false">
+                Admin
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropMenu">
+                <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                <li><a class="dropdown-item" href="#">Tin nhắn</a></li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse ">
+                <div class="position-sticky pt-md-3 h-100">
+                    <ul class="nav flex-column ">
+                        <li class="nav-item mb-2 cusHov">
+                            <a href="Admin.html" class="nav-link" aria-current="page" href="#">
+                                <span class="ml-2 ">Trang chủ</span>
+                            </a>  
+                        </li>
+                        <!-- <li class="nav-item mb-2 cusHov">
+                            <a href="AdminKhachHang.html" class="nav-link" aria-current="page" href="#">
+                                <span class="ml-2">Khách hàng</span>
+                            </a>  
+                        </li> -->
+                        <!-- <li class="nav-item mb-2 cusHov">
+                            <a href="AdminDonHang.html" class="nav-link" aria-current="page" href="#">
+                                <span class="ml-2">Đơn hàng</span>
+                            </a>  
+                        </li> -->
+                        <li class="nav-item mb-2 cusHov">
+                            <a href="AdminWatch.html" class="nav-link" aria-current="page" href="#">
+                                <span class="ml-2">Tin tức</span>
+                            </a>  
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4 my-2">
+                <div class="row ml-3">
+                    <div class="col=lg-12">
+                        <a href="AdminWatch.html"><button class="btn btn-primary mr-3">Quản lý</button></a>
+                        <a href="AdminTinTuc.html"><button class="btn btn-primary">Thêm</button></a>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="card m-3 w-100 hov">
+                        <div class="card-body">
+                            <h2>Tin tức</h2>
+                            <hr>
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 7%;">STT</th>
+                                        <th style="width: 50%;">Tiêu đề</th>
+                                        <th style="width: 10%;"> Lượt xem</th>
+                                        <th style="width: 33%;">Lệnh</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Thói quen đọc sách: Những lợi ích sức khỏe tuyệt vời</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Đông trùng hạ thảo có tác dụng gì?</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Nhân sâm có tác dụng thế nào đến sức khoẻ?</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Cam thảo và những tác dụng tuỵêt vời mà nó mang lại</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quế có tác dụng gì? Thảo dược có nhiều tác dụng hữu ích đối với sức khỏe</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Hoa oải hương và những công dụng mà bạn chưa biết</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Những điều cần biết về sơ cứu đuối nước</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Cách xử lý khi chảy máu và những lưu ý khi cầm máu</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Cách xử lý và những lưu ý khi bị ong đốt</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cách xử lý khi gặp người bị động kinh</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Bệnh nhân bị sốt: Nên điều trị như thế nào?</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Chăm sóc trẻ bị thủy đậu đúng cách tránh các biến chứng nguy hiểm</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Bệnh sởi: Nguyên nhân, triệu chứng, cách phòng ngừa và điều trị hiệu quả</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Hướng dẫn phòng & chăm sóc trẻ bị bệnh tay chân miệng</td>
+                                        <td>650</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                            <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                            <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="card m-3 w-100 hov">
+                    <div class="card-body">
+                        <h2>Các bệnh thường gặp</h2>
+                        <hr>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th style="width: 7%;">STT</th>
+                                    <th style="width: 50%;">Tiêu đề</th>
+                                    <th style="width: 10%;"> Lượt xem</th>
+                                    <th style="width: 33%;">Lệnh</th>
+                                </tr>
+                            </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Sốt</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Thuỷ đậu</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sợi</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Tay chân miệng</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="card m-3 w-100 hov">
+                    <div class="card-body">
+                        <h2>Sơ cứu</h2>
+                        <hr>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th style="width: 7%;">STT</th>
+                                    <th style="width: 50%;">Tiêu đề</th>
+                                    <th style="width: 10%;"> Lượt xem</th>
+                                    <th style="width: 33%;">Lệnh</th>
+                                </tr>
+                            </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Đuói nước</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Chảy máu</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Ong đốt</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Động kinh</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="card m-3 w-100 hov">
+                    <div class="card-body">
+                        <h2>Nhận biết thảo dược</h2>
+                        <hr>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th style="width: 7%;">STT</th>
+                                    <th style="width: 50%;">Tiêu đề</th>
+                                    <th style="width: 10%;"> Lượt xem</th>
+                                    <th style="width: 33%;">Lệnh</th>
+                                </tr>
+                            </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Đông trùng hạ thảo</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nhân sâm</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cam thảo</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Quế</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Hoa oải hương</td>
+                                    <td>650</td>
+                                    <td>
+                                        <a href="" class="text-decoration-none mr-5">Chỉnh sửa</a>
+                                        <a href="" class="text-decoration-none mr-5 text-danger">Xoá</a>
+                                        <a href="" class="text-decoration-none mr-5 text-success">Đăng</a>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+<footer class="d-flex justify-content-center footer">
+    <span class="my-3">Copyright ©: KTYT</span>
+</footer>
+
+
+</body>
+</html>

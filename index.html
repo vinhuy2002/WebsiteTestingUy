@@ -1,251 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Just Test</title>
-
-	<style type="text/css">
-		.scrolltop {
-  display:none;
-  width:100%;
-  margin:0 auto;
-  position:fixed;
-  bottom:20px;
-  right:10px; 
-  background:#1cbbb4;
-}
-.scroll {
-  position:absolute;
-  right:20px;
-  bottom:20px;
-  background:#1cbbb4;
-  padding:10px 18px 10px 18px;
-  text-align: center;
-  margin: 0 0 0 0;
-  cursor:pointer;
-  transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;   
-  border-radius:50%; 
-
-}
-.scroll:hover {
-  background: crimson;
-  transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;    
-}
-.scroll:hover .fa {
-  padding-top:-10px;
-  
-}
-.scroll .fa {
-  font-size:30px;
-  margin-top:-5px;
-  margin-left:1px;
-  transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s; 
-}
-.cardu{
-	bottom: 100px;
-	right: 100px;
-    margin-right: 100px;
-	position: fixed;
-}
-
-	</style>
+	<meta charset="UTF-8">
+	<title>Kiến Thức Y Tế</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mycss/vinhuy.css">
+	<link rel="stylesheet" href="mycss/mycssKTYT.css">
+	<script src="myscript/scriptKTMT.js"></script>
+	<script src="Bootstrap/jquery.min.js"></script>
+	<script src="Bootstrap/popper.min.js"></script>
+	<script src="Bootstrap/bootstrap.min.js"></script>
+	<script src="Bootstrap/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body>
-	<div class="container trang">
+	<div class='thetop'></div>
+	<div class="container topp">
 		<div class="row">
-			<div class="col-lg-4">
-				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/doc-sach.jpg" alt="pr-sample15" />
-					<div class="image"><img src="images/doc-sach.jpg" alt="pr-sample15" /></div>
-					<figcaption>
-						<h3 style="font-size: 22px">Đọc sách</h3>
-						<p>Sách là một loạt các tờ giấy có chữ hoặc hình ảnh được viết tay hoặc in ấn, được buộc hoặc dán với nhau về một phía.</p>
-					</figcaption>
-					<span class="read-more">Xem chi tiết</span>
-					<a href="tintuc/thoi-quen-doc-sach-nhung-loi-ich-suc-khoe-tuyet-voi.html"></a>
-				</figure>
-			</div>
-			<div class="col-lg-8 top10">
-				<a href="tintuc/thoi-quen-doc-sach-nhung-loi-ich-suc-khoe-tuyet-voi.html" class="binhThuong">
-					<h3><b>Thói quen đọc sách: Những lợi ích sức khỏe tuyệt vời</b></h3>
+			<div class="col-lg-5">
+				<a href="index.html">
+					<img src="images/logoKTYT.png" style="width:240px;">	
 				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Giảm stress</a></li>
-					<li><a href="#" class="tag">Ngủ ngon</a></li>
-					<li><a href="#" class="tag">Tăng tuổi thọ</a></li>
-					<li><a href="#" class="tag">Ít trầm cảm</a></li>
-				</ul>
-				<p>Đọc sách đem lại rất nhiều lợi ích, điều này tất cả chúng ta đều đã biết. Đọc sách giúp bổ sung kiến thức, mở rộng vốn từ hay cũng là một hình thức giải trí. Cho đến nay đã có nhiều nghiên cứu cho thấy hiệu quả của việc đọc sách tác động lên não bộ. Họ đã quan sát các sóng não trong suốt thời gian đọc sách và những ngày sau đó. Nó cho thấy rằng các vùng não bộ được kết nối nhiều hơn. Đặc biệt, vùng vỏ não cảm giác là được kích thích mạnh mẽ hơn cả. Điều này củng cố cho ý kiến rằng đọc sách giúp phát triển não bộ....</p>
+			</div>
+			<div class="col-lg-7">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Bạn cứ nhập từ khoá, còn lại để KTYT lo">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<hr>
 
-		<div class="row">
-			<div class="col-lg-4">
-				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/dong-trung-ha-thao.jpg" alt="pr-sample15">
-					<div class="image"><img src="images/dong-trung-ha-thao.jpg" alt="pr-sample15" /></div>
-					<figcaption>
-						<h3 style="font-size: 22px">Đông trùng hạ thảo</h3>
-						<p>Đông trùng hạ thảo là một loại đông dược quý có bản chất là dạng ký sinh của loài nấm Ophiocordyceps sinensis, được sử dụng từ lâu trong y học cổ truyền</p>
-					</figcaption>
-					<span class="read-more">Xem chi tiết</span>
-					<a href="tintuc/dong-trung-ha-thao-co-tac-dung-gi.html"></a>
-				</figure>
-			</div>
-			<div class="col-lg-8 top10">
-				<a href="tintuc/dong-trung-ha-thao-co-tac-dung-gi.html" class="binhThuong">
-					<h3><b>Đông trùng hạ thảo có tác dụng gì?</b></h3>
-				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Thận hư</a></li>
-					<li><a href="#" class="tag">Mệt mỏi</a></li>
-					<li><a href="#" class="tag">Miễn dịch</a></li>
-					<li><a href="#" class="tag">Ho</a></li>
+	<nav class="navbar navbar-dark navbar-expand-lg text-white">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainText" aria-controls="mainText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link text-white">Trang chủ</a></li>
+
+					<!-- Dropdown  -->
+					<li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navDrop">Dấu hiệu bệnh</a>
+						<div class="dropdown-menu" aria-labelledby="navDrop">
+							<div class="container ">
+								<div class="subnav-content">
+									<input class="form-control" type="text" placeholder="Nhập dấu hiệu" id="myInput" onkeyup="filterFunction()" style="width:100%"><br>
+									<a href="#company">Co giật</a>
+									<a href="#company">Chán ăn</a>
+									<a href="#company">Chóng mặt</a>
+									<a href="#company">Chảy mồ hôi</a>
+									<a href="#company">Chảy máu mũi</a>
+									<a href="#company">Chấm đỏ</a>
+									<a href="#company">Chảy máu chân răng</a>
+									<a href="#company">Dị ứng</a>
+									<a href="#company">Đau đầu</a>
+									<a href="#company">Đốm nhỏ trên da</a>
+									<a href="#company">Đau bụng</a>
+									<a href="#company">Đau vai gáy</a>
+									<a href="#company">Đau khớp</a>
+									<a href="#company">Đau họng</a>
+									<a href="#company">Ho Khan</a>
+									<a href="#company">Hoa mắt</a>
+									<a href="#company">Kén ăn</a>
+									<a href="#company">Khó thở</a>
+									<a href="#company">Khó tiêu</a>
+									<a href="#company">Mắt mờ</a>
+									<a href="#company">Mệt mỏi</a>
+									<a href="#company">Mẫn cảm</a>
+									<a href="#company">Ngứa</a>
+									<a href="#company">Ngủ không được</a>
+									<a href="#company">Ngộ độc</a>
+									<a href="#company">Nấm chân</a>
+									<a href="#company">Ù tai</a>
+									<a href="#company">Sùi bọt mép</a>
+									<a href="#company">Sứng vù</a>
+									<a href="#company">Tức ngực</a>
+									<a href="#company">Trẻ khóc</a>
+									<a href="#company">Tiểu ra máu</a>
+									<a href="#company">...</a> 
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown  -->
+
+					<li class="nav-item"><a href="BenhThuongGap.html" class="nav-link text-white">Các bệnh thường gặp</a></li>
+					<li class="nav-item"><a href="SoCuu.html" class="nav-link text-white" onclick="openCity(event, 'SoCuu')">Sơ cứu</a></li>
+					<li class="nav-item"><a href="NhanBietThaoDuoc.html" class="nav-link text-white" onclick="openCity(event, 'NhanBietThaoDuoc')">Nhận biết thảo dược</a></li>
+					<li class="nav-item"><a href="KhoaHocYKhoa.html" class="nav-link text-white" onclick="openCity(event, 'KhoaHocYKhoa')">Khoá học</a></li>
+					<li class="nav-item"><a href="CuaHangSucKhoe.html" class="nav-link text-white" onclick="openCity(event, 'CuaHangSucKhoe')">Cửa hàng sức khỏe</a></li>
+					<li class="nav-item"><a href="TinTuc.html" class="nav-link text-white" onclick="openCity(event, 'TinTuc')">Tin tức</a></li>
 				</ul>
-				<p>Vì sao đông trùng hạ thảo lại được nhiều người “săn đón” ? Thực tế, đông trùng hạ thảo không chỉ khác biệt trong nguồn gốc, mà còn rất đặc biệt trong những công dụng quý mà nó mang lại. Khi sử dụng đúng cách thì đông trùng hạ thảo sẽ phát huy những lợi ích tuyệt vời với sức khỏe con người...</p>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item "><a href="#" class="nav-link text-white" onclick="openNav()">Khác</a></li>
+				</ul>
 			</div>
 		</div>
-		<hr>
+	</nav>	
 
+	<div id="mySidepanel" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 1px 13px 1px 13px;">×</a>
+		<a href="#">Fanpage</a>
+		<a href="#">Group</a>
+		<a href="#">Donate</a>
+		<a href="#">Trợ giúp</a>
+	</div>
+
+	<div class="scrolltop">
+		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+	</div>
+
+
+	<div id="mySidenav">
+		<a href="CuaHangSucKhoe.html" id="cuahang" style="font-size:15px">Cửa hàng sức khỏe</a>
+		<a href="KhoaHocYKhoa.html" id="khoahoc" style="font-size:15px">Giới thiệu khóa học</a>
+	</div>
+
+
+
+	<div class="container trang top20">
+		<img src="images/bac-si.jpg">
+		<hr>
+		<div class="alert alert-secondary alertGDC">
+			<strong>CÁC BỆNH THƯỜNG GẶP</strong>
+			<strong class="rightt"><a href="BenhThuongGap.html">|||</a></strong>
+		</div>
 		<div class="row">
 			<div class="col-lg-4">
 				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/nhan-sam.jpg" alt="pr-sample15" />
-					<div class="image"><img src="images/nhan-sam.jpg" alt="pr-sample15" /></div>
+					<img src="images/sot.png" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/sot.png" alt="pr-sample15" /></div>
 					<figcaption>
-						<h3 style="font-size: 22px">Nhân sâm</h3>
-						<p>Nhân sâm (Tên khoa học: Panax ginseng) là một loài thực vật có hoa thuộc Họ Cuồng. Nhân sâm là loài thảo dược rất khó trồng, là một vị thuốc quý của y học cổ truyền</p>
+						<h3 style="font-size: 25px;">Sốt</h3>
+						<p>Sốt là sự gia tăng nhiệt độ cơ thể cao hơn nhiệt độ bình thường của cơ thể người là 36.5–37.5°C</p>
 					</figcaption>
 					<span class="read-more">Xem chi tiết</span>
-					<a href="#"></a>
+					<a href="tintuc/benh-nhan-bi-sot-nen-dieu-tri-nhu-the-nao.html"></a>
 				</figure>
 			</div>
-			<div class="col-lg-8 top10">
-				<a href="" class="binhThuong">
-					<h3><b>Nhân sâm có tác dụng thế nào đến sức khoẻ?</b></h3>
-				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Mất ngủ</a></li>
-					<li><a href="#" class="tag">Căng thẳng</a></li>
-					<li><a href="#" class="tag">Trướng bụng</a></li>
-					<li><a href="#" class="tag">Buồn nôn</a></li>
-				</ul>
-				<p>Theo cuốn "Thần Nông bản thảo kinh", sâm có vị ngọt và hơi lạnh. Nó đặc biệt tốt cho các nội tạng quan trọng. Khoa học hiện đại có thể phân tích hoạt chất trong các vị thuốc trong Đông y, nhưng vẫn không đạt tới tinh túy thực sự của nó. Thực ra, đặc tính của các hoạt chất trong Đông y thì không thể nào tách ra được. Cũng có ý nói rằng tuy chỉ có 1 vị thuốc nhân sâm nhưng trong đó có thể chứa rất nhiều hoạt chất...</p>
-			</div>
-		</div>
-		<hr>
-
-		<div class="row">
 			<div class="col-lg-4">
 				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/cam-thao.jpg" alt="pr-sample15" />
-					<div class="image"><img src="images/cam-thao.jpg" alt="pr-sample15" /></div>
+					<img src="images/thuy-dau.jpg" alt="pr-sample15" class="imgtintuc"/>
+					<div class="image"><img src="images/thuy-dau.jpg" alt="pr-sample15" /></div>
 					<figcaption>
-						<h3 style="font-size: 22px">Cam thảo</h3>
-						<p>Cam thảo (Tên khoa học: Glycyrrhiza glabra). Không chỉ được sử dụng nhiều trong thực phẩm mà còn được sử dụng trong y học nhờ một số tác dụng tích cực đến sức khỏe</p>
+						<h3 style="font-size: 25px">Thủy Đậu</h3>
+						<p>Bệnh thủy đậu (còn gọi là bệnh trái rạ) bệnh do virus Varicella zoster gây ra. Bệnh chủ yếu ở trẻ em.</p>
 					</figcaption>
 					<span class="read-more">Xem chi tiết</span>
-					<a href="#"></a>
+					<a href="tintuc/cham-soc-tre-bi-thuy-dau-dung-cach-tranh-cac-bien-chung-nguy-hiem.html"></a>
 				</figure>
 			</div>
-			<div class="col-lg-8 top10">
-				<a href="" class="binhThuong">
-					<h3><b>Cam thảo và những tác dụng tuỵêt vời mà nó mang lại</b></h3>
-				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Mất ngủ</a></li>
-					<li><a href="#" class="tag">Căng thẳng</a></li>
-					<li><a href="#" class="tag">Trướng bụng</a></li>
-					<li><a href="#" class="tag">Buồn nôn</a></li>
-				</ul>
-				<p>Cây cam thảo là một loại thảo dược có chứa axit glycyrrhizic, có thể gây ra biến chứng khi dùng với số lượng lớn. Với vai trò dược chất, cam thảo thường được sử dụng điều trị các vấn đề đường tiêu hóa bao gồm loét dạ dày, ợ nóng, đau bụng và viêm niêm mạc dạ dày (viêm dạ dày mạn tính), đau cổ họng, viêm phế quản, ho và nhiễm trùng do vi khuẩn hoặc virus, các triệu chứng mãn kinh, loãng xương, viêm khớp mạn tính, lupus ban đỏ hệ thống, rối loạn gan, sốt rét, lao phổi, kali cao trong máu, ngộ độc thực phẩm, hội chứng mệt mỏi mạn tính, áp xe, phục hồi sau phẫu thuật, phát ban, cholesterol cao...</p>
-			</div>
-		</div>
-		<hr>
-
-		<div class="row">
 			<div class="col-lg-4">
 				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/que.jpg" alt="pr-sample15" />
-					<div class="image"><img src="images/que.jpg" alt="pr-sample15" /></div>
+					<img src="images/benh-soi.jpg" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/benh-soi.jpg" alt="pr-sample15" /></div>
 					<figcaption>
-						<h3 style="font-size: 22px">Quế</h3>
-						<p>Quế là phần thu được từ lớp vỏ thân cành của một số loài thực vật thuộc chi Cinnamomum, có vị cay, mùi thơm được dùng để làm thuốc và gia vị trong chế biến thực phẩm.</p>
+						<h3 style="font-size: 25px">Sởi</h3>
+						<p>Sởi là một bệnh nhiễm virus cấp tính đặc trưng là phát ban xuất hiện từ cổ, mặt, ngực, thân, chân tay kèm theo sốt cao.</p>
 					</figcaption>
 					<span class="read-more">Xem chi tiết</span>
-					<a href="#"></a>
+					<a href="tintuc/benh-soi-nguyen-nhan-trieu-chung-cach-phong-ngua-va-dieu-tri-hieu-qua.html"></a>
 				</figure>
 			</div>
-			<div class="col-lg-8 top10">
-				<a href="" class="binhThuong">
-					<h3><b>Quế có tác dụng gì? Thảo dược có nhiều tác dụng hữu ích đối với sức khỏe</b></h3>
-				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Mất ngủ</a></li>
-					<li><a href="#" class="tag">Căng thẳng</a></li>
-					<li><a href="#" class="tag">Trướng bụng</a></li>
-					<li><a href="#" class="tag">Buồn nôn</a></li>
-				</ul>
-				<p>Đây là một loài cây thân gỗ với lá thường xanh, có quan hệ họ hàng gần với loài ở Trung Quốc hơn so với Srilanka mặc dù thuộc cùng một chi thực vật. Lá có hình trứng hai đầu hẹp lại, hơi nhọn. Hoa màu trắng mọc thành cụm ở kẽ lá hay đầu cành. Quả hạch hình trứng dài...</p>
-			</div>
+			<a href="BenhThuongGap.html" class="binhThuong midd">
+				<button type="button" class="btn btn-info btnGDC">Xem thêm nhiều bệnh hơn</button>
+			</a>
 		</div>
-		<hr>
 
+		<hr>		
+		<div class="alert alert-secondary alertGDC">
+			<strong>KIẾN THỨC SƠ CỨU</strong>
+			<strong class="rightt"><a href="SoCuu.html">|||</a></strong> 
+		</div>
 		<div class="row">
 			<div class="col-lg-4">
 				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/oai-huong.jpg" alt="pr-sample15" />
-					<div class="image"><img src="images/oai-huong.jpg" alt="pr-sample15" /></div>
-					<figcaption>
-						<h3 style="font-size: 22px">Hoa oải hương</h3>
-						<p>Oải hương (Tên khoa học: Lavandula angustifolia), có nhiều loại khác nhau. Loài được biết đến nhiều nhất là Lavandula angustifolia, nổi bật với màu tía và thấp nhỏ.</p>
-					</figcaption>
-					<span class="read-more">Xem chi tiết</span>
-					<a href="#"></a>
-				</figure>
-			</div>
-			<div class="col-lg-8 top10">
-				<a href="" class="binhThuong">
-					<h3><b>Hoa oải hương và những công dụng mà bạn chưa biết</b></h3>
-				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Mất ngủ</a></li>
-					<li><a href="#" class="tag">Căng thẳng</a></li>
-					<li><a href="#" class="tag">Trướng bụng</a></li>
-					<li><a href="#" class="tag">Buồn nôn</a></li>
-				</ul>
-				<p>Ở những đất nước nhiệt đới như Việt Nam, bạn có thể chỉ biết đến mùi oải hương qua các nhãn hiệu nước hoa, sữa tắm,..hay lâu lâu mới thấy trong các shop hoa lớn. Liệu bạn có biết loài hoa xinh đẹp, bí ẩn mang hồn Châu Âu này rất thú vị và có ích cho cuộc sống của chúng ta? Và dù là loài hoa dại nhưng nó cũng được trồng ở rất nhiều nước. Hãy cùng tìm hiểu xem người châu Âu trồng loài hoa này như thế nào nhé! </p>
-			</div>
-		</div>
-		<hr>
-
-		<div class="row">
-			<div class="col-lg-4">
-				<figure class="snip1369 snip1370 green mx-auto">
-					<img src="images/duoi-nuoc.png" alt="pr-sample15" />
+					<img src="images/duoi-nuoc.png" alt="pr-sample15" class="imgtintuc" />
 					<div class="image"><img src="images/duoi-nuoc.png" alt="pr-sample15" /></div>
 					<figcaption>
 						<h3 style="font-size: 25px">Đuối nước</h3>
@@ -255,52 +191,452 @@
 					<a href="tintuc/nhung-dieu-can-biet-ve-so-cuu-duoi-nuoc.html"></a>
 				</figure>
 			</div>
-			<div class="col-lg-8 top10">
-				<a href="tintuc/nhung-dieu-can-biet-ve-so-cuu-duoi-nuoc.html" class="binhThuong">
-					<h3><b>Những điều cần biết về sơ cứu đuối nước</b></h3>
-				</a>
-				<ul class="tags">
-					<li><a href="#" class="tag">Mất ngủ</a></li>
-					<li><a href="#" class="tag">Căng thẳng</a></li>
-					<li><a href="#" class="tag">Trướng bụng</a></li>
-					<li><a href="#" class="tag">Buồn nôn</a></li>
-				</ul>
-				<p>Đuối nước là một dạng của ngạt, do nước bị hít vào phổi, hoặc tắc đường thở do co thắt thanh quản khi nạn nhân ở trong nước. Đây là một tai nạn hay gặp, xảy ra trong khi bơi, đi thuyền và trong các hoạt động dưới nước. Tuy nhiên, cũng có thể xảy ra tại nhà như trong bồn nước, chum, vại, rãnh nước,... Khi bị ngạt nước, nạn nhân bị ngừng thở, tim đập chậm lại do phản xạ. Tình trạng ngừng thở tiếp tục dẫn đến thiếu oxy máu, gây tăng nhịp tim, huyết áp. Nếu ngừng thở tiếp tục kéo dài trong khoảng từ 20 giây đến 2 - 5 phút ...</p>
+			<div class="col-lg-4">
+				<figure class="snip1369 snip1370 green mx-auto">
+					<img src="images/cam-mau.jpg" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/cam-mau.jpg" alt="pr-sample15" /></div>
+					<figcaption>
+						<h3 style="font-size: 25px">Chảy máu</h3>
+						<p>Có rất nhiều nguyên nhân gây ra tình trạng các vết thương bị chảy máu như: do đóng đinh, giẫm đạp vật nhọn hoặc trong khi làm việc thiếu cẩn thận,...</p>
+					</figcaption>
+					<span class="read-more">Xem chi tiết</span>
+					<a href="#"></a>
+				</figure>
 			</div>
+			<div class="col-lg-4">
+				<figure class="snip1369 snip1370 green mx-auto">
+					<img src="images/ong-dot.jpg" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/ong-dot.jpg" alt="pr-sample15" /></div>
+					<figcaption>
+						<h3 style="font-size: 25px">Ong đốt</h3>
+						<p>Ong đốt là bị một cú đốt từ một con ong (ong mật, ong nghệ, Halictidae, vv). Các cú đốt từ hầu hết các loài ong khá đau đớn</p>
+					</figcaption>
+					<span class="read-more">Xem chi tiết</span>
+					<a href="#"></a>
+				</figure>
+			</div>
+			<a href="SoCuu.html" class="binhThuong midd">
+				<button type="button" class="btn btn-info btnGDC">Xem thêm nhiều cách sơ cứu hơn</button>
+			</a>
 		</div>
 		<hr>
-	<!-- Messenger Plugin chat Code -->
-    <div class="cardu">
-        <div id="fb-root"></div>
 
-        <!-- Your Plugin chat code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-    </div>
+		<div class="alert alert-secondary alertGDC">
+			<strong>NHẬN BIẾT THẢO DƯỢC</strong>
+			<strong class="rightt"><a href="NhanBietThaoDuoc.html">|||</a></strong> 
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<figure class="snip1369 snip1370 green mx-auto">
+					<img src="images/dong-trung-ha-thao.jpg" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/dong-trung-ha-thao.jpg" alt="pr-sample15" /></div>
+					<figcaption>
+						<h3 style="font-size: 22px">Đông trùng hạ thảo</h3>
+						<p>Đông trùng hạ thảo là một loại đông dược quý có bản chất là dạng ký sinh của loài nấm Ophiocordyceps sinensis, được sử dụng từ lâu trong y học cổ truyền</p>
+					</figcaption>
+					<span class="read-more">Xem chi tiết</span>
+					<a href="tintuc/dong-trung-ha-thao-co-tac-dung-gi.html"></a>
+				</figure>
+			</div>
+			<div class="col-lg-4">
+				<figure class="snip1369 snip1370 green mx-auto">
+					<img src="images/nhan-sam.jpg" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/nhan-sam.jpg" alt="pr-sample15" /></div>
+					<figcaption>
+						<h3 style="font-size: 22px">Nhân sâm</h3>
+						<p>Nhân sâm (Tên khoa học: Panax ginseng) là một loài thực vật có hoa thuộc Họ Cuồng. Nhân sâm là loài thảo dược rất khó trồng, là một vị thuốc quý của y học cổ truyền</p>
+					</figcaption>
+					<span class="read-more">Xem chi tiết</span>
+					<a href="#"></a>
+				</figure>
+			</div>
+			<div class="col-lg-4">
+				<figure class="snip1369 snip1370 green mx-auto">
+					<img src="images/cam-thao.jpg" alt="pr-sample15" class="imgtintuc" />
+					<div class="image"><img src="images/cam-thao.jpg" alt="pr-sample15" /></div>
+					<figcaption>
+						<h3 style="font-size: 22px">Cam thảo</h3>
+						<p>Cam thảo (Tên khoa học: Glycyrrhiza glabra). Không chỉ được sử dụng nhiều trong thực phẩm mà còn được sử dụng trong y học nhờ một số tác dụng tích cực đến sức khỏe</p>
+					</figcaption>
+					<span class="read-more">Xem chi tiết</span>
+					<a href="#"></a>
+				</figure>
+			</div>
+			<a href="NhanBietThaoDuoc.html" class="binhThuong midd">
+				<button type="button" class="btn btn-info btnGDC">Xem thêm nhiều thảo dược hơn</button>
+			</a>
+		</div>
+		<hr>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101856545501629");
-      chatbox.setAttribute("attribution", "biz_inbox");
+		<div class="alert alert-secondary alertGDC">
+			<strong>KHÓA HỌC Y KHOA</strong>
+			<strong class="rightt"><a href="KhoaHocYKhoa.html">|||</a></strong> 
+		</div>
+		<div>
+			<div id="khoahocykhoa" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#khoahocykhoa" data-slide-to="0" class="active"></li>
+					<li data-target="#khoahocykhoa" data-slide-to="1"></li>
+					<li data-target="#khoahocykhoa" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="khoahoc/covid-19.html" class="card-link">
+									<div class="card-img">
+										<img src="images/khoahoc-covid19.jpg" alt="pr-sample15" />
+									</div>
+									<div class="card-inner">
+										<h3>COVID-19</h3>
+										<h4>Khóa học Hiểu biết và Ứng dụng cách chăm sóc</h4>
+										<div class="inner-text">
+											<p>Tìm hiểu các nguyên tắc và thực hành chăm sóc quan trọng để điều trị và chăm sóc những bệnh nhân bị bệnh trong đại dịch COVID-19...</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div> 
+					</div>
+					<div class="carousel-item">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="#" class="card-link">
+									<div class="card-img">
+										<img src="images/khoahoc-nen-tang-y-hoc.jpg" alt="pr-sample15" />
+									</div>
+									<div class="card-inner">
+										<h3>NỀN TẢNG Y HỌC</h3>
+										<h4>Lứa tuổi 16-18</h4>
+										<div class="inner-text">
+											<p>Nền tảng y tế là một chương trình một năm độc lập cung cấp cho 60 tín chỉ. Chương trình cung cấp một giới thiệu kỹ lưỡng về mặt y học. Chương trình này là phù hợp cho sinh viê...</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="#" class="card-link">
+									<div class="card-img">
+										<img src="images/khoahoc-khoa-hoc-he.jpg" alt="pr-sample15" />
+									</div>
+									<div class="card-inner">
+										<h3>KHÓA HỌC HÈ</h3>
+										<h4>Lứa tuổi 16-18</h4>
+										<div class="inner-text">
+											<p>Chọn học ngành y là một quyết định lớn. Nó sẽ đòi hỏi nhiều giờ, nhiều năm học tập và cống hiến không ngừng nghỉ; nghiên cứu y học có thể là thách thức, nhưng bổ ích. ...</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#khoahocykhoa" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#khoahocykhoa" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
 
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
-        });
-      };
+			</div>
+			<a href="KhoaHocYKhoa.html" class="binhThuong midd">
+				<center><button type="button" class="btn btn-info">Xem thêm nhiều khóa học hơn</button></center>
+			</a>
+		</div>
+		
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-	<div class="scrolltop">
-		<div class="scroll icon"><i class="fa fa-2x fa-angle-up"></i></div>
+		<hr>
+		<div class="alert alert-secondary alertGDC">
+			<strong>TIN TỨC</strong>
+			<strong class="rightt"><a href="TinTuc.html">|||</a></strong> 
+		</div>
+		<div class="row">
+			<div class="row">
+				<div class="col-lg-4">
+					<figure class="snip1369 snip1370 green mx-auto">
+						<img src="images/doc-sach.jpg" alt="pr-sample15" />
+						<div class="image"><img src="images/doc-sach.jpg" alt="pr-sample15" /></div>
+						<figcaption>
+							<h3 style="font-size: 22px">Đọc sách</h3>
+							<p>Sách là một loạt các tờ giấy có chữ hoặc hình ảnh được viết tay hoặc in ấn, được buộc hoặc dán với nhau về một phía.</p>
+						</figcaption>
+						<span class="read-more">Xem chi tiết</span>
+						<a href="tintuc/thoi-quen-doc-sach-nhung-loi-ich-suc-khoe-tuyet-voi.html"></a>
+					</figure>
+				</div>
+				<div class="col-lg-8 top10">
+					<a href="tintuc/thoi-quen-doc-sach-nhung-loi-ich-suc-khoe-tuyet-voi.html" class="binhThuong">
+						<h3><b>Thói quen đọc sách: Những lợi ích sức khỏe tuyệt vời</b></h3>
+					</a>
+					<ul class="tags">
+						<li><a href="#" class="tag">Thận hư</a></li>
+						<li><a href="#" class="tag">Mệt mỏi</a></li>
+						<li><a href="#" class="tag">Miễn dịch</a></li>
+						<li><a href="#" class="tag">Ho</a></li>
+					</ul>
+					<p>Đọc sách đem lại rất nhiều lợi ích, điều này tất cả chúng ta đều đã biết. Đọc sách giúp bổ sung kiến thức, mở rộng vốn từ hay cũng là một hình thức giải trí. Cho đến nay đã có nhiều nghiên cứu cho thấy hiệu quả của việc đọc sách tác động lên não bộ. Họ đã quan sát các sóng não trong suốt thời gian đọc sách và những ngày sau đó. Nó cho thấy rằng các vùng não bộ được kết nối nhiều hơn. Đặc biệt, vùng vỏ não cảm giác là được kích thích mạnh mẽ hơn cả. Điều này củng cố cho ý kiến rằng đọc sách giúp phát triển não bộ....</p>
+				</div>
+			</div><br>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<figure class="snip1369 snip1370 green mx-auto">
+						<img src="images/thuy-dau.jpg" alt="pr-sample15" class="imgtintuc"/>
+						<div class="image"><img src="images/thuy-dau.jpg" alt="pr-sample15" /></div>
+						<figcaption>
+							<h3 style="font-size: 25px">Thủy Đậu</h3>
+							<p>Bệnh thủy đậu (còn gọi là bệnh trái rạ) bệnh do virus Varicella zoster gây ra. Bệnh chủ yếu ở trẻ em.</p>
+						</figcaption>
+						<span class="read-more">Xem chi tiết</span>
+						<a href="#"></a>
+					</figure>
+				</div>
+				<div class="col-lg-8 top10">
+					<a href="" class="binhThuong">
+						<h3><b>Chăm sóc trẻ bị thủy đậu đúng cách tránh các biến chứng nguy hiểm</b></h3>
+					</a>
+					<ul class="tags">
+						<li><a href="#" class="tag">Mất ngủ</a></li>
+						<li><a href="#" class="tag">Căng thẳng</a></li>
+						<li><a href="#" class="tag">Trướng bụng</a></li>
+						<li><a href="#" class="tag">Buồn nôn</a></li>
+					</ul>
+					<p>Bệnh thuỷ đậu lưu hành quanh năm trên phạm vi cả nước, nhưng mùa đông xuân là thời điểm bùng phát. Tại các bệnh viện, số ca mắc thuỷ đậu có dấu hiệu tăng lên với nhiều ca biến chứng nguy hiểm. Đây là một loại bệnh truyền nhiễm cấp tính, chủ yếu thường gặp ở trẻ em với khả năng lây lan rất cao. Để giúp cho người nhà bệnh nhân biết cách chăm sóc trẻ và phát hiện xử trí kịp thời khi trẻ bị thủy đậu...</p>
+				</div>
+			</div><br>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<figure class="snip1369 snip1370 green mx-auto">
+						<img src="images/oai-huong.jpg" alt="pr-sample15" />
+						<div class="image"><img src="images/oai-huong.jpg" alt="pr-sample15" /></div>
+						<figcaption>
+							<h3 style="font-size: 22px">Hoa oải hương</h3>
+							<p>Oải hương (Tên khoa học: Lavandula angustifolia), có nhiều loại khác nhau. Loài được biết đến nhiều nhất là Lavandula angustifolia, nổi bật với màu tía và thấp nhỏ.</p>
+						</figcaption>
+						<span class="read-more">Xem chi tiết</span>
+						<a href="#"></a>
+					</figure>
+				</div>
+				<div class="col-lg-8 top10">
+					<a href="" class="binhThuong">
+						<h3><b>Hoa oải hương và những công dụng mà bạn chưa biết</b></h3>
+					</a>
+					<ul class="tags">
+						<li><a href="#" class="tag">Mất ngủ</a></li>
+						<li><a href="#" class="tag">Căng thẳng</a></li>
+						<li><a href="#" class="tag">Trướng bụng</a></li>
+						<li><a href="#" class="tag">Buồn nôn</a></li>
+					</ul>
+					<p>Ở những đất nước nhiệt đới như Việt Nam, bạn có thể chỉ biết đến mùi oải hương qua các nhãn hiệu nước hoa, sữa tắm,..hay lâu lâu mới thấy trong các shop hoa lớn. Liệu bạn có biết loài hoa xinh đẹp, bí ẩn mang hồn Châu Âu này rất thú vị và có ích cho cuộc sống của chúng ta? Và dù là loài hoa dại nhưng nó cũng được trồng ở rất nhiều nước. Hãy cùng tìm hiểu xem người châu Âu trồng loài hoa này như thế nào nhé! </p>
+				</div>
+			</div><br>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<figure class="snip1369 snip1370 green mx-auto">
+						<img src="images/dong-trung-ha-thao.jpg" alt="pr-sample15" />
+						<div class="image"><img src="images/dong-trung-ha-thao.jpg" alt="pr-sample15" /></div>
+						<figcaption>
+							<h3 style="font-size: 22px">Đông trùng hạ thảo</h3>
+							<p>Đông trùng hạ thảo là một loại đông dược quý có bản chất là dạng ký sinh của loài nấm Ophiocordyceps sinensis, được sử dụng từ lâu trong y học cổ truyền</p>
+						</figcaption>
+						<span class="read-more">Xem chi tiết</span>
+						<a href="tintuc/dong-trung-ha-thao-co-tac-dung-gi.html"></a>
+					</figure>
+				</div>
+				<div class="col-lg-8 top10">
+					<a href="" class="binhThuong">
+						<h3><b>Đông trùng hạ thảo có tác dụng gì?</b></h3>
+					</a>
+					<ul class="tags">
+						<li><a href="#" class="tag">Thận hư</a></li>
+						<li><a href="#" class="tag">Mệt mỏi</a></li>
+						<li><a href="#" class="tag">Miễn dịch</a></li>
+						<li><a href="#" class="tag">Ho</a></li>
+					</ul>
+					<p>Vì sao đông trùng hạ thảo lại được nhiều người “săn đón” ? Thực tế, đông trùng hạ thảo không chỉ khác biệt trong nguồn gốc, mà còn rất đặc biệt trong những công dụng quý mà nó mang lại. Khi sử dụng đúng cách thì đông trùng hạ thảo sẽ phát huy những lợi ích tuyệt vời với sức khỏe con người...</p>
+				</div>
+			</div><br>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<figure class="snip1369 snip1370 green mx-auto">
+						<img src="images/duoi-nuoc.png" alt="pr-sample15" />
+						<div class="image"><img src="images/duoi-nuoc.png" alt="pr-sample15" /></div>
+						<figcaption>
+							<h3 style="font-size: 25px">Đuối nước</h3>
+							<p>Đuối nước (ngạt nước) là hiện tượng khí quản con người bị chất lỏng (thường là nước) xâm nhập vào dẫn đến khó thở</p>
+						</figcaption>
+						<span class="read-more">Xem chi tiết</span>
+						<a href="#"></a>
+					</figure>
+				</div>
+				<div class="col-lg-8 top10">
+					<a href="" class="binhThuong">
+						<h3><b>Những điều cần biết về sơ cứu đuối nước</b></h3>
+					</a>
+					<ul class="tags">
+						<li><a href="#" class="tag">Mất ngủ</a></li>
+						<li><a href="#" class="tag">Căng thẳng</a></li>
+						<li><a href="#" class="tag">Trướng bụng</a></li>
+						<li><a href="#" class="tag">Buồn nôn</a></li>
+					</ul>
+					<p>Đuối nước là một dạng của ngạt, do nước bị hít vào phổi, hoặc tắc đường thở do co thắt thanh quản khi nạn nhân ở trong nước. Đây là một tai nạn hay gặp, xảy ra trong khi bơi, đi thuyền và trong các hoạt động dưới nước. Tuy nhiên, cũng có thể xảy ra tại nhà như trong bồn nước, chum, vại, rãnh nước,... Khi bị ngạt nước, nạn nhân bị ngừng thở, tim đập chậm lại do phản xạ. Tình trạng ngừng thở tiếp tục dẫn đến thiếu oxy máu, gây tăng nhịp tim, huyết áp. Nếu ngừng thở tiếp tục kéo dài trong khoảng từ 20 giây đến 2 - 5 phút ...</p>
+				</div>
+			</div>
+			<a href="TinTuc.html" class="binhThuong midd">
+				<button type="button" class="btn btn-info btnGDC">Xem thêm nhiều tin tức hơn</button>
+			</a>
+		</div>
+
+		<hr>
+		<div class="alert alert-secondary alertGDC">
+			<strong style="float: ">CỬA HÀNG SỨC KHỎE</strong>
+			<strong class="rightt"><a href="CuaHangYTe.html">|||</a></strong> 
+		</div>
+		<div>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+					<li data-target="#demo" data-slide-to="3"></li>
+					<li data-target="#demo" data-slide-to="4"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="sanpham/forever-active-ha-264-flp-ho-tro-xuong-khop.html" class="card-link">
+									<div class="card-img">
+										<img src="images/264.png" alt="pr-sample15"/>
+									</div>
+									<div class="card-inner">
+										<h3>Forever Active HA</h3>
+										<h4>Chống và phục hồi thoái hóa xương khớp 264</h4>
+										<div class="inner-text">
+											<p>Dùng cho những người có bệnh về khớp, bị khô chất nhầy trong ổ khớp, viêm khớp, người mắc bệnh gout. Không những thế, những người hay vận động, chơi thể thao nhiều cũng nên sử dụng sản phẩm này để bổ sung các vi chất dinh dưỡng từ thảo mộc cho cơ thể, giúp xương khớp hoạt động tốt nhất.</p>
+											<p>Lọ : 60 Viên</p>
+											<p>Mã số : 264 FLP</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div> 
+					</div>
+					<div class="carousel-item">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="sanpham/nuoc-uong-dinh-duong-forever-living-aloe-vera-gel-715flp.html" class="card-link">
+									<div class="card-img">
+										<img src="images/Forever-Aloe-Vera-Gel-715-Flp.jpg" alt="pr-sample15"/>
+									</div>
+									<div class="card-inner">
+										<h3>Forever Aloe Vera Gel</h3>
+										<h4>Nước uống dinh dưỡng 715</h4>
+										<div class="inner-text">
+											<p>Nước uống dinh dưỡng Forever Aloe Vera Gel hỗ trợ khả năng tiêu hóa, chức năng miễn dịch và cung cấp các khoáng chất vi lượng và vitamin, 8 axit amin cần thiết, giúp tối ưu hấp thụ dưỡng chất. Đặc biệt còn hỗ trợ điều trị bệnh ung thư.</p>
+											<p>Dung tích : 1 lít</p>
+											<p>Mã số : 715 FLP</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="#" class="card-link">
+									<div class="card-img">
+										<img src="images/arctic-sea.png" alt="pr-sample15"  />
+									</div>
+									<div class="card-inner">
+										<h3>Forever Arctic Sea</h3>
+										<h4>Viên dầu cá 376</h4>
+										<div class="inner-text">
+											<p>Viên dầu cá Forever Arctic-Sea có chức năng duy trì ổn định sự hoạt động của hệ tim mạch, bảo vệ thành mạch củng cố hệ tuần hoàn. Không những thế, nó còn cung cấp những chất cần thiết cho các chức năng khác như tăng cường cho cơ quan não, mắt, hỗ trợ cho chức năng xương khớp.</p>
+											<p>Lọ : 120 Viên</p>
+											<p>Mã số : 376 FLP</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="#" class="card-link">
+									<div class="card-img">
+										<img src="images/Forever-Fields-of-Green-068-Flp-8.12.20.jpg" alt="pr-sample15"/>
+									</div>
+									<div class="card-inner">
+										<h3>Forever Fields Of Green</h3>
+										<h4>Viên rau xanh 068</h4>
+										<div class="inner-text">
+											<p>Thực phẩm chức năng Viên rau xanh Fields Of Greens của Mỹ đã ra đời và trở thành một giải pháp bồi bổ, cung cấp một lượng rau xanh và chất xơ cần thiết và quan trọng cho cơ thể.</p>
+											<p>Lọ : 80 Viên</p>
+											<p>Mã số : 068 FLP</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row row-big-card">
+							<div class="cont borderradius">
+								<a href="#" class="card-link">
+									<div class="card-img">
+										<img src="images/Forever-A-Beta-Care-054-Flp.png" alt="pr-sample15"/>
+									</div>
+									<div class="card-inner">
+										<h3>Forever A-Beta-CarE</h3>
+										<h4>Viên Vitamin A,E & Silen 054</h4>
+										<div class="inner-text">
+											<p>Sử dụng cho những người trong chế độ ăn uống thiếu, bị những tổn thương da, niêm mạc, công việc tiếp súc với một số chất độc hại. Giúp ngăn ngừa rối loạn da, tăng cường hệ thống tuần hoàn máu, chống  oxy hóa mạnh. Bổ xung vitamin A và E cho cơ thể, có tác dụng tốt cho da và mắt...</p>
+											<p>Lọ : 100 Viên</p>
+											<p>Mã số : 054 FLP</p>
+										</div>
+										<span class="cta-card">Đọc thêm</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+			<a href="CuaHangYTe.html" class="binhThuong midd">
+				<center><button type="button" class="btn btn-info ">Xem thêm nhiều Sản phẩm sức khỏe hơn</button></center>
+			</a>
+		</div>
+
 	</div>
+
+
+	<br><br>
+
+
 	<script type="text/javascript">
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 50 ) {
@@ -311,5 +647,56 @@
 		});
 		$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
 	</script>
+
+	
+	<footer class="footer_u">
+		<div class="container_u">
+			<div class="row_u">
+				<div class="footer-col_u">
+					<h4 style="margin-bottom: 50px">Nhận thông tin mới nhất</h4>
+					<form>
+						<input type="email" name="" class="email_u" placeholder="Địa chỉ Email">
+						<br>
+						<button class="btn_u">Đăng Ký</button>
+					</form>
+				</div>
+				<div class="footer-col_u">
+					<h4>Hỗ trợ</h4>
+					<ul>
+						<li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Về Website</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Khám phá</h4>
+					<ul>
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="BenhThuongGap.html">Các bệnh thường gặp</a></li>
+						<li><a href="SoCuu.html">Sơ cứu</a></li>
+						<li><a href="NhanBietThaoDuoc.html">Nhận biết thảo dược</a></li>
+						<li><a href="KhoaHocYKhoa.html">Khoa học y khoa</a></li>
+						<li><a href="TinTuc.html">Tin tức</a></li>
+						<li><a href="CuaHangYTe.html">Cửa hàng sức khỏe</a></li>
+					</ul>
+				</div>
+				<div class="footer-col_u">
+					<h4>Kết nối với chúng tôi</h4>
+					<div class="social-links_u">
+						<a href="https://www.facebook.com/no299792458/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/bangphan_nora/"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<footer>
+		<div class="row_u">
+			<div class="mini-footer_u">Copyright © 2021: <a href="index.html">KTYT</a></div>
+		</div>
+	</footer>
+
+
 </body>
 </html>

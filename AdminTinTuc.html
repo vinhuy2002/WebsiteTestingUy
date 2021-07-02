@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mycss/admin.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="Bootstrap/popper.min.js"></script>
+    <script src="Bootstrap/jquery.min.js"></script>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark p-3 wcolor">
+     <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+        <a href="#" class="navbar-brand">
+            Kiến Thức Y Tế
+        </a>
+        <button class="navbar-toggler navbar-dark bg-primary collapsed mb-3 d-md-none px-2" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="slidebar" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-md-end mt-3 mt-md-0 mr-5">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropMenu" data-toggle="dropdown" aria-expanded="false">
+                Admin
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropMenu">
+                <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                <li><a class="dropdown-item" href="#">Tin nhắn</a></li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse ">
+            <div class="position-sticky pt-md-3 h-100">
+                <ul class="nav flex-column ">
+                    <li class="nav-item mb-2 cusHov">
+                        <a href="Admin.html" class="nav-link" aria-current="page" href="#">
+                            <span class="ml-2 ">Trang chủ</span>
+                        </a>  
+                    </li>
+                    <!-- <li class="nav-item mb-2 cusHov">
+                        <a href="AdminKhachHang.html" class="nav-link" aria-current="page" href="#">
+                            <span class="ml-2">Khách hàng</span>
+                        </a>  
+                    </li> -->
+                    <!-- <li class="nav-item mb-2 cusHov">
+                        <a href="AdminDonHang.html" class="nav-link" aria-current="page" href="#">
+                            <span class="ml-2">Đơn hàng</span>
+                        </a>  
+                    </li> -->
+                    <li class="nav-item mb-2 cusHov">
+                        <a href="AdminWatch.html" class="nav-link" aria-current="page" href="#">
+                            <span class="ml-2">Tin tức</span>
+                        </a>  
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4 my-2">
+            <div class="row ml-3">
+                <div class="col=lg-12">
+                    <a href="AdminWatch.html"><button class="btn btn-primary mr-3">Quản lý</button></a>
+                    <a href="AdminTinTuc.html"><button class="btn btn-primary">Thêm</button></a>
+                </div>
+            </div>
+            <div class="row my-3">
+            <div class="col-md-12 px-5 py-3 colgorund ">
+                
+                <div class="container">
+                    <div class="row">
+                        <h2>Tiêu đề: </h2>
+                    </div>
+                    <div class="row">
+                        <input type="text"  class="w-100 mb-3" id="header1">
+                    </div>
+                    <div class="row">
+                        <h2>Nhãn:</h2>
+                    </div>
+                    <div class="row">
+                        <input type="text"  class="w-100 mb-3" id="header1">
+                    </div>
+                    <div class="row">
+                        <h2>Chọn tệp: </h2>
+                    </div>
+                    <div class="row">
+                        <input type="file" id="selectF" accept=".jpg, .jpeg, .png" multiple class="w-50 mb-3 border" >
+                    </div>
+                    <div class="row">
+                        <h2>Nội dung: </h2>
+                    </div>
+                    <div class="row">
+                        <textarea name="info1"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 nopadding">
+                            <button class="btn btn-success float-right px-5 mt-3">OK</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </main>
+    </div>
+</div>
+<footer class="d-flex justify-content-center footer">
+    <span class="my-3">Copyright ©: KTYT</span>
+</footer>
+<script type="text/javascript">
+    CKEDITOR.replace('info1');
+    CKEDITOR.config.removePlugins = 'resize';
+    CKEDITOR.config.height = '500px';
+    CKEDITOR.config.width = "100%";
+    const fileSelector = document.getElementById('selectF');
+    fileSelector.addEventListener('change', (event) => {
+        const fileList = event.target.files;
+        console.log(fileList);
+    });
+</script>
+</body>
+</html>
